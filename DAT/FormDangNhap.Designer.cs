@@ -62,10 +62,11 @@
             guna2Panel1.Controls.Add(guna2Panel2);
             guna2Panel1.CustomizableEdges = customizableEdges11;
             guna2Panel1.ImeMode = ImeMode.NoControl;
-            guna2Panel1.Location = new Point(1, -6);
+            guna2Panel1.Location = new Point(1, -10);
+            guna2Panel1.Margin = new Padding(4, 5, 4, 5);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            guna2Panel1.Size = new Size(854, 461);
+            guna2Panel1.Size = new Size(1220, 768);
             guna2Panel1.TabIndex = 2;
             guna2Panel1.UseTransparentBackground = true;
             // 
@@ -81,13 +82,14 @@
             guna2Panel2.Controls.Add(guna2HtmlLabel1);
             guna2Panel2.CustomizableEdges = customizableEdges9;
             guna2Panel2.FillColor = Color.White;
-            guna2Panel2.Location = new Point(273, 42);
+            guna2Panel2.Location = new Point(390, 70);
+            guna2Panel2.Margin = new Padding(4, 5, 4, 5);
             guna2Panel2.Name = "guna2Panel2";
             guna2Panel2.ShadowDecoration.BorderRadius = 20;
             guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges10;
             guna2Panel2.ShadowDecoration.Enabled = true;
             guna2Panel2.ShadowDecoration.Shadow = new Padding(8);
-            guna2Panel2.Size = new Size(332, 379);
+            guna2Panel2.Size = new Size(474, 632);
             guna2Panel2.TabIndex = 0;
             // 
             // guna2CheckBox1
@@ -98,9 +100,10 @@
             guna2CheckBox1.CheckedState.BorderRadius = 0;
             guna2CheckBox1.CheckedState.BorderThickness = 0;
             guna2CheckBox1.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
-            guna2CheckBox1.Location = new Point(45, 249);
+            guna2CheckBox1.Location = new Point(64, 415);
+            guna2CheckBox1.Margin = new Padding(4, 5, 4, 5);
             guna2CheckBox1.Name = "guna2CheckBox1";
-            guna2CheckBox1.Size = new Size(68, 19);
+            guna2CheckBox1.Size = new Size(100, 29);
             guna2CheckBox1.TabIndex = 5;
             guna2CheckBox1.Text = "Ghi nhớ";
             guna2CheckBox1.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
@@ -121,10 +124,11 @@
             guna2GradientButton1.FillColor2 = Color.IndianRed;
             guna2GradientButton1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             guna2GradientButton1.ForeColor = Color.White;
-            guna2GradientButton1.Location = new Point(35, 287);
+            guna2GradientButton1.Location = new Point(50, 478);
+            guna2GradientButton1.Margin = new Padding(4, 5, 4, 5);
             guna2GradientButton1.Name = "guna2GradientButton1";
             guna2GradientButton1.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2GradientButton1.Size = new Size(261, 45);
+            guna2GradientButton1.Size = new Size(373, 75);
             guna2GradientButton1.TabIndex = 4;
             guna2GradientButton1.Text = "Đăng nhập";
             // 
@@ -143,13 +147,14 @@
             guna2TextBox2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             guna2TextBox2.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             guna2TextBox2.IconLeft = (Image)resources.GetObject("guna2TextBox2.IconLeft");
-            guna2TextBox2.Location = new Point(35, 207);
+            guna2TextBox2.Location = new Point(50, 345);
+            guna2TextBox2.Margin = new Padding(4, 5, 4, 5);
             guna2TextBox2.Name = "guna2TextBox2";
             guna2TextBox2.PasswordChar = '●';
             guna2TextBox2.PlaceholderText = "Mật khẩu";
             guna2TextBox2.SelectedText = "";
             guna2TextBox2.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2TextBox2.Size = new Size(261, 36);
+            guna2TextBox2.Size = new Size(373, 60);
             guna2TextBox2.TabIndex = 3;
             guna2TextBox2.UseSystemPasswordChar = true;
             // 
@@ -168,13 +173,14 @@
             guna2TextBox1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             guna2TextBox1.IconLeft = (Image)resources.GetObject("guna2TextBox1.IconLeft");
-            guna2TextBox1.Location = new Point(35, 154);
+            guna2TextBox1.Location = new Point(50, 257);
+            guna2TextBox1.Margin = new Padding(4, 5, 4, 5);
             guna2TextBox1.Name = "guna2TextBox1";
             guna2TextBox1.PasswordChar = '\0';
             guna2TextBox1.PlaceholderText = "Tên đăng nhập";
             guna2TextBox1.SelectedText = "";
             guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2TextBox1.Size = new Size(261, 36);
+            guna2TextBox1.Size = new Size(373, 60);
             guna2TextBox1.TabIndex = 2;
             // 
             // guna2PictureBox1
@@ -184,10 +190,11 @@
             guna2PictureBox1.CustomizableEdges = customizableEdges7;
             guna2PictureBox1.Image = (Image)resources.GetObject("guna2PictureBox1.Image");
             guna2PictureBox1.ImageRotate = 0F;
-            guna2PictureBox1.Location = new Point(127, 52);
+            guna2PictureBox1.Location = new Point(181, 87);
+            guna2PictureBox1.Margin = new Padding(4, 5, 4, 5);
             guna2PictureBox1.Name = "guna2PictureBox1";
             guna2PictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2PictureBox1.Size = new Size(82, 64);
+            guna2PictureBox1.Size = new Size(117, 107);
             guna2PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             guna2PictureBox1.TabIndex = 1;
             guna2PictureBox1.TabStop = false;
@@ -196,19 +203,20 @@
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Verdana", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2HtmlLabel1.Location = new Point(81, 12);
+            guna2HtmlLabel1.Location = new Point(116, 20);
+            guna2HtmlLabel1.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(167, 34);
+            guna2HtmlLabel1.Size = new Size(255, 51);
             guna2HtmlLabel1.TabIndex = 0;
             guna2HtmlLabel1.Text = "ĐĂNG NHẬP";
             // 
             // FormDangNhap
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(854, 455);
+            ClientSize = new Size(1220, 758);
             Controls.Add(guna2Panel1);
-            Margin = new Padding(2);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "FormDangNhap";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormDangNhap";

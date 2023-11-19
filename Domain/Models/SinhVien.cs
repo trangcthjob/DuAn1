@@ -18,7 +18,7 @@ namespace Domain.Models
         public string SoDienThoai { get; set; }
         public string DiaChi { get; set; }
         public ChuyenNganh? ChuyenNganh { get; set; }
-        public Guid? ChuyenNganhId { get; set; }
+        public Guid? ChuyenNganhId { get; set; }      
 
     }
 }
