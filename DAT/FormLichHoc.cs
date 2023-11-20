@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace DAT
 {
-    public partial class TestForm : Form
+    public partial class FormLichHoc : Form
     {
-        public TestForm()
+        public FormLichHoc()
         {
             InitializeComponent();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
