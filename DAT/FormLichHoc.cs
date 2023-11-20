@@ -26,5 +26,10 @@ namespace DAT
         {
 
         }
+
+        private void txtMa_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

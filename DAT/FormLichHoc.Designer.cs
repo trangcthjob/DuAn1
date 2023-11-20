@@ -167,6 +167,7 @@
             txtMa.Name = "txtMa";
             txtMa.Size = new Size(357, 27);
             txtMa.TabIndex = 13;
+            txtMa.TextChanged += txtMa_TextChanged;
             // 
             // txtNgayHoc
             // 
