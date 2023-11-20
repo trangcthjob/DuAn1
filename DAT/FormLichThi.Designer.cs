@@ -260,9 +260,9 @@
         private TextBox txtMa;
         private TextBox txtSosv;
         private TextBox txtNgaythi;
-        private ComboBox cmbxLop;
         private ComboBox cmbxCa;
         private ComboBox cmbxMon;
         private ComboBox cmbxGiangVien;
+        private ComboBox cmbxLop;
     }
 }
