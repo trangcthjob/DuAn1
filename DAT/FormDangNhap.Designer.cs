@@ -49,6 +49,8 @@
             guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            linkLabel1 = new LinkLabel();
+            guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2Panel1.SuspendLayout();
             guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
@@ -74,6 +76,8 @@
             // 
             guna2Panel2.BackColor = Color.Transparent;
             guna2Panel2.BorderRadius = 20;
+            guna2Panel2.Controls.Add(guna2HtmlLabel2);
+            guna2Panel2.Controls.Add(linkLabel1);
             guna2Panel2.Controls.Add(guna2CheckBox1);
             guna2Panel2.Controls.Add(guna2GradientButton1);
             guna2Panel2.Controls.Add(guna2TextBox2);
@@ -210,6 +214,24 @@
             guna2HtmlLabel1.TabIndex = 0;
             guna2HtmlLabel1.Text = "ĐĂNG NHẬP";
             // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.Location = new Point(246, 414);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(0, 25);
+            linkLabel1.TabIndex = 6;
+            // 
+            // guna2HtmlLabel2
+            // 
+            guna2HtmlLabel2.BackColor = Color.Transparent;
+            guna2HtmlLabel2.ForeColor = Color.OrangeRed;
+            guna2HtmlLabel2.Location = new Point(224, 412);
+            guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            guna2HtmlLabel2.Size = new Size(185, 27);
+            guna2HtmlLabel2.TabIndex = 7;
+            guna2HtmlLabel2.Text = "Bạn chưa có tài khoản?";
+            // 
             // FormDangNhap
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -237,5 +259,7 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private LinkLabel linkLabel1;
     }
 }
