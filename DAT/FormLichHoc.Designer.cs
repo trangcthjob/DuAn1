@@ -186,6 +186,7 @@
             // cmbxCaHoc
             // 
             cmbxCaHoc.FormattingEnabled = true;
+            cmbxCaHoc.ImeMode = ImeMode.NoControl;
             cmbxCaHoc.Location = new Point(106, 144);
             cmbxCaHoc.Name = "cmbxCaHoc";
             cmbxCaHoc.Size = new Size(245, 28);
