@@ -17,17 +17,7 @@ namespace DAT
             InitializeComponent();
         }
 
-        private void label7_Click(object sender, EventArgs e)
-        {
-            // ...
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtMa_TextChanged(object sender, EventArgs e)
+        private void guna2HtmlLabel4_Click(object sender, EventArgs e)
         {
 
         }
