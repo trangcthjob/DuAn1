@@ -114,6 +114,7 @@
             guna2PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             guna2PictureBox1.TabIndex = 5;
             guna2PictureBox1.TabStop = false;
+            guna2PictureBox1.Click += guna2PictureBox1_Click;
             // 
             // guna2GradientButton5
             // 

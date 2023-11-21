@@ -36,8 +36,13 @@ namespace DAT
         private void btnHome_Click(object sender, EventArgs e)
         {
             btnHome.ForeColor = Color.Gray;
-            FormDangNhap test = new FormDangNhap();
-            OpenForm(test);
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+            FormThongTinCaNhan formInfomation = new FormThongTinCaNhan();
+            formInfomation.showFormChangePassword += OpenForm;
+            OpenForm(formInfomation);
         }
     }
 }
