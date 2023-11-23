@@ -33,7 +33,9 @@ namespace Domain.Models
         
         public GenderEnum Gender { get; set; }
         public Roles? Roles { get; set; }
-        public Guid RolesId { get; set; }
+        public Guid? RolesId { get; set; }
+        // Avatar của tài khoản
+        public string? Avatar { get; set; }
 
     }
 }

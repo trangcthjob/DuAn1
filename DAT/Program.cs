@@ -1,3 +1,6 @@
+using DAT_Services.IServices;
+using DAT_Services.Services;
+
 namespace DAT
 {
     internal static class Program
@@ -11,7 +14,7 @@ namespace DAT
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new FormTaiKhoan());
+            Application.Run(new FormDangNhap());
         }
     }
 }

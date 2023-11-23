@@ -8,11 +8,11 @@ namespace Infrastructure.Enum
 {
     public enum GenderEnum
     {
+        NoShare = 0,
         // Nam
-        Men = 0,
+        Men = 1,
         // Nữ
-        Women = 1,
+        Women = 2,
         // Không muốn tiết lộ
-        NoShare = 2,
     }
 }

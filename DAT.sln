@@ -5,11 +5,13 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAT", "DAT\DAT.csproj", "{6E905C0B-821E-493E-9E84-E0D35552DB8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{4107E394-7336-4290-8435-73E53128A6DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{4107E394-7336-4290-8435-73E53128A6DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{742F49B3-45D6-4027-88EE-7ABAE818C700}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{742F49B3-45D6-4027-88EE-7ABAE818C700}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAT_Context", "DAT_Context\DAT_Context.csproj", "{FEE9D314-B7CD-4B76-AE89-954DE67FEAAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAT_Context", "DAT_Context\DAT_Context.csproj", "{FEE9D314-B7CD-4B76-AE89-954DE67FEAAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAT_Services", "DAT_Services\DAT_Services.csproj", "{B6AF8103-AD3E-4625-AA01-23E94860235A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{FEE9D314-B7CD-4B76-AE89-954DE67FEAAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEE9D314-B7CD-4B76-AE89-954DE67FEAAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEE9D314-B7CD-4B76-AE89-954DE67FEAAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6AF8103-AD3E-4625-AA01-23E94860235A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6AF8103-AD3E-4625-AA01-23E94860235A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6AF8103-AD3E-4625-AA01-23E94860235A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6AF8103-AD3E-4625-AA01-23E94860235A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

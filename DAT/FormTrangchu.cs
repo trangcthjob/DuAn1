@@ -13,6 +13,7 @@ namespace DAT
 {
     public partial class FormTrangchu : Form
     {
+        public string Username { get; set; } = string.Empty;
         public FormTrangchu()
         {
             InitializeComponent();
@@ -41,8 +42,23 @@ namespace DAT
         private void guna2PictureBox1_Click(object sender, EventArgs e)
         {
             FormThongTinCaNhan formInfomation = new FormThongTinCaNhan();
+            formInfomation.Username = Username;
             formInfomation.showFormChangePassword += OpenForm;
+            formInfomation.ChangeAvatarMenu += (fileName) =>
+            {
+                pic_avatar.Image = new Bitmap(fileName);
+            };
             OpenForm(formInfomation);
+        }
+
+        private void FormTrangchu_Load(object sender, EventArgs e)
+        {
+            // Hiển thị avatar
+            var account = new DAT_Services.Services.AccountServices().GetAccount(Username);
+            if (!string.IsNullOrEmpty(account.Avatar))
+            {
+                pic_avatar.Image = new Bitmap(account.Avatar);
+            }
         }
     }
 }

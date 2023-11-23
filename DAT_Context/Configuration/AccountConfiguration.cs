@@ -16,11 +16,9 @@ namespace DAT_Context.Configuration
             // key
             builder.HasKey(x => x.Id);
             // property
-            builder.Property(x => x.DisplayName).IsRequired();
-            builder.Property(x => x.UserName).IsRequired().IsUnicode();
+            builder.Property(x => x.DisplayName).IsUnicode();
+            builder.Property(x => x.UserName).IsRequired();
             builder.Property(x => x.Password).IsRequired();
-            builder.Property(x => x.Email).IsRequired();
-            builder.Property(x => x.Phone).IsRequired();
         }
     }
 }

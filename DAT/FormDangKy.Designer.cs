@@ -33,6 +33,8 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -41,17 +43,15 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
-            guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            txt_repassword = new Guna.UI2.WinForms.Guna2TextBox();
+            cb_policy = new Guna.UI2.WinForms.Guna2CheckBox();
+            btn_register = new Guna.UI2.WinForms.Guna2GradientButton();
+            txt_password = new Guna.UI2.WinForms.Guna2TextBox();
+            txt_username = new Guna.UI2.WinForms.Guna2TextBox();
             guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             guna2Panel1.SuspendLayout();
             guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
@@ -77,11 +77,11 @@
             // 
             guna2Panel2.BackColor = Color.Transparent;
             guna2Panel2.BorderRadius = 20;
-            guna2Panel2.Controls.Add(guna2TextBox3);
-            guna2Panel2.Controls.Add(guna2CheckBox1);
-            guna2Panel2.Controls.Add(guna2GradientButton1);
-            guna2Panel2.Controls.Add(guna2TextBox2);
-            guna2Panel2.Controls.Add(guna2TextBox1);
+            guna2Panel2.Controls.Add(txt_repassword);
+            guna2Panel2.Controls.Add(cb_policy);
+            guna2Panel2.Controls.Add(btn_register);
+            guna2Panel2.Controls.Add(txt_password);
+            guna2Panel2.Controls.Add(txt_username);
             guna2Panel2.Controls.Add(guna2PictureBox1);
             guna2Panel2.Controls.Add(guna2HtmlLabel1);
             guna2Panel2.CustomizableEdges = customizableEdges11;
@@ -96,96 +96,128 @@
             guna2Panel2.Size = new Size(474, 632);
             guna2Panel2.TabIndex = 0;
             // 
-            // guna2CheckBox1
+            // txt_repassword
             // 
-            guna2CheckBox1.AutoSize = true;
-            guna2CheckBox1.BackColor = Color.Transparent;
-            guna2CheckBox1.CheckedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2CheckBox1.CheckedState.BorderRadius = 0;
-            guna2CheckBox1.CheckedState.BorderThickness = 0;
-            guna2CheckBox1.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
-            guna2CheckBox1.Location = new Point(59, 426);
-            guna2CheckBox1.Margin = new Padding(4, 5, 4, 5);
-            guna2CheckBox1.Name = "guna2CheckBox1";
-            guna2CheckBox1.Size = new Size(329, 29);
-            guna2CheckBox1.TabIndex = 5;
-            guna2CheckBox1.Text = "Tôi đồng ý với điều khoản và dịch vụ";
-            guna2CheckBox1.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
-            guna2CheckBox1.UncheckedState.BorderRadius = 0;
-            guna2CheckBox1.UncheckedState.BorderThickness = 0;
-            guna2CheckBox1.UncheckedState.FillColor = Color.FromArgb(125, 137, 149);
-            guna2CheckBox1.UseVisualStyleBackColor = false;
+            txt_repassword.Animated = true;
+            txt_repassword.BorderColor = Color.DarkGray;
+            txt_repassword.BorderRadius = 12;
+            txt_repassword.CustomizableEdges = customizableEdges1;
+            txt_repassword.DefaultText = "";
+            txt_repassword.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txt_repassword.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txt_repassword.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txt_repassword.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txt_repassword.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txt_repassword.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_repassword.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txt_repassword.IconLeft = (Image)resources.GetObject("txt_repassword.IconLeft");
+            txt_repassword.Location = new Point(50, 357);
+            txt_repassword.Margin = new Padding(4, 5, 4, 5);
+            txt_repassword.Name = "txt_repassword";
+            txt_repassword.PasswordChar = '●';
+            txt_repassword.PlaceholderText = "Nhập lại mật khẩu";
+            txt_repassword.SelectedText = "";
+            txt_repassword.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            txt_repassword.Size = new Size(373, 60);
+            txt_repassword.TabIndex = 6;
+            txt_repassword.UseSystemPasswordChar = true;
+            txt_repassword.TextChanged += txt_repassword_TextChanged;
             // 
-            // guna2GradientButton1
+            // cb_policy
             // 
-            guna2GradientButton1.BorderRadius = 12;
-            guna2GradientButton1.CustomizableEdges = customizableEdges3;
-            guna2GradientButton1.DisabledState.BorderColor = Color.DarkGray;
-            guna2GradientButton1.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2GradientButton1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2GradientButton1.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
-            guna2GradientButton1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2GradientButton1.FillColor2 = Color.IndianRed;
-            guna2GradientButton1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2GradientButton1.ForeColor = Color.White;
-            guna2GradientButton1.Location = new Point(50, 478);
-            guna2GradientButton1.Margin = new Padding(4, 5, 4, 5);
-            guna2GradientButton1.Name = "guna2GradientButton1";
-            guna2GradientButton1.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2GradientButton1.Size = new Size(373, 75);
-            guna2GradientButton1.TabIndex = 4;
-            guna2GradientButton1.Text = "Đăng ký";
+            cb_policy.AutoSize = true;
+            cb_policy.BackColor = Color.Transparent;
+            cb_policy.CheckedState.BorderColor = Color.FromArgb(94, 148, 255);
+            cb_policy.CheckedState.BorderRadius = 0;
+            cb_policy.CheckedState.BorderThickness = 0;
+            cb_policy.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
+            cb_policy.Location = new Point(59, 426);
+            cb_policy.Margin = new Padding(4, 5, 4, 5);
+            cb_policy.Name = "cb_policy";
+            cb_policy.Size = new Size(329, 29);
+            cb_policy.TabIndex = 5;
+            cb_policy.Text = "Tôi đồng ý với điều khoản và dịch vụ";
+            cb_policy.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
+            cb_policy.UncheckedState.BorderRadius = 0;
+            cb_policy.UncheckedState.BorderThickness = 0;
+            cb_policy.UncheckedState.FillColor = Color.FromArgb(125, 137, 149);
+            cb_policy.UseVisualStyleBackColor = false;
+            cb_policy.CheckedChanged += cb_policy_CheckedChanged;
             // 
-            // guna2TextBox2
+            // btn_register
             // 
-            guna2TextBox2.Animated = true;
-            guna2TextBox2.BorderColor = Color.DarkGray;
-            guna2TextBox2.BorderRadius = 12;
-            guna2TextBox2.CustomizableEdges = customizableEdges5;
-            guna2TextBox2.DefaultText = "";
-            guna2TextBox2.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox2.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox2.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox2.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2TextBox2.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox2.IconLeft = (Image)resources.GetObject("guna2TextBox2.IconLeft");
-            guna2TextBox2.Location = new Point(50, 287);
-            guna2TextBox2.Margin = new Padding(4, 5, 4, 5);
-            guna2TextBox2.Name = "guna2TextBox2";
-            guna2TextBox2.PasswordChar = '●';
-            guna2TextBox2.PlaceholderText = "Mật khẩu";
-            guna2TextBox2.SelectedText = "";
-            guna2TextBox2.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2TextBox2.Size = new Size(373, 60);
-            guna2TextBox2.TabIndex = 3;
-            guna2TextBox2.UseSystemPasswordChar = true;
+            btn_register.BorderRadius = 12;
+            btn_register.CustomizableEdges = customizableEdges3;
+            btn_register.DisabledState.BorderColor = Color.DarkGray;
+            btn_register.DisabledState.CustomBorderColor = Color.DarkGray;
+            btn_register.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btn_register.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
+            btn_register.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btn_register.Enabled = false;
+            btn_register.FillColor2 = Color.IndianRed;
+            btn_register.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_register.ForeColor = Color.White;
+            btn_register.Location = new Point(50, 478);
+            btn_register.Margin = new Padding(4, 5, 4, 5);
+            btn_register.Name = "btn_register";
+            btn_register.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btn_register.Size = new Size(373, 75);
+            btn_register.TabIndex = 4;
+            btn_register.Text = "Đăng ký";
+            btn_register.Click += btn_register_Click;
             // 
-            // guna2TextBox1
+            // txt_password
             // 
-            guna2TextBox1.Animated = true;
-            guna2TextBox1.BorderColor = Color.DarkGray;
-            guna2TextBox1.BorderRadius = 12;
-            guna2TextBox1.CustomizableEdges = customizableEdges7;
-            guna2TextBox1.DefaultText = "";
-            guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.IconLeft = (Image)resources.GetObject("guna2TextBox1.IconLeft");
-            guna2TextBox1.Location = new Point(50, 217);
-            guna2TextBox1.Margin = new Padding(4, 5, 4, 5);
-            guna2TextBox1.Name = "guna2TextBox1";
-            guna2TextBox1.PasswordChar = '\0';
-            guna2TextBox1.PlaceholderText = "Tên đăng nhập";
-            guna2TextBox1.SelectedText = "";
-            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2TextBox1.Size = new Size(373, 60);
-            guna2TextBox1.TabIndex = 2;
+            txt_password.Animated = true;
+            txt_password.BorderColor = Color.DarkGray;
+            txt_password.BorderRadius = 12;
+            txt_password.CustomizableEdges = customizableEdges5;
+            txt_password.DefaultText = "";
+            txt_password.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txt_password.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txt_password.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txt_password.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txt_password.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txt_password.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_password.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txt_password.IconLeft = (Image)resources.GetObject("txt_password.IconLeft");
+            txt_password.Location = new Point(50, 287);
+            txt_password.Margin = new Padding(4, 5, 4, 5);
+            txt_password.Name = "txt_password";
+            txt_password.PasswordChar = '●';
+            txt_password.PlaceholderText = "Mật khẩu";
+            txt_password.SelectedText = "";
+            txt_password.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            txt_password.Size = new Size(373, 60);
+            txt_password.TabIndex = 3;
+            txt_password.UseSystemPasswordChar = true;
+            txt_password.TextChanged += txt_password_TextChanged;
+            // 
+            // txt_username
+            // 
+            txt_username.Animated = true;
+            txt_username.BorderColor = Color.DarkGray;
+            txt_username.BorderRadius = 12;
+            txt_username.CustomizableEdges = customizableEdges7;
+            txt_username.DefaultText = "";
+            txt_username.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txt_username.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txt_username.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txt_username.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txt_username.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txt_username.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_username.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txt_username.IconLeft = (Image)resources.GetObject("txt_username.IconLeft");
+            txt_username.Location = new Point(50, 217);
+            txt_username.Margin = new Padding(4, 5, 4, 5);
+            txt_username.Name = "txt_username";
+            txt_username.PasswordChar = '\0';
+            txt_username.PlaceholderText = "Tên đăng nhập";
+            txt_username.SelectedText = "";
+            txt_username.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            txt_username.Size = new Size(373, 60);
+            txt_username.TabIndex = 2;
+            txt_username.TextChanged += txt_username_TextChanged;
             // 
             // guna2PictureBox1
             // 
@@ -214,32 +246,6 @@
             guna2HtmlLabel1.TabIndex = 0;
             guna2HtmlLabel1.Text = "ĐĂNG KÝ";
             // 
-            // guna2TextBox3
-            // 
-            guna2TextBox3.Animated = true;
-            guna2TextBox3.BorderColor = Color.DarkGray;
-            guna2TextBox3.BorderRadius = 12;
-            guna2TextBox3.CustomizableEdges = customizableEdges1;
-            guna2TextBox3.DefaultText = "";
-            guna2TextBox3.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox3.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox3.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox3.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox3.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2TextBox3.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox3.IconLeft = (Image)resources.GetObject("guna2TextBox3.IconLeft");
-            guna2TextBox3.Location = new Point(50, 357);
-            guna2TextBox3.Margin = new Padding(4, 5, 4, 5);
-            guna2TextBox3.Name = "guna2TextBox3";
-            guna2TextBox3.PasswordChar = '●';
-            guna2TextBox3.PlaceholderText = "Nhập lại mật khẩu";
-            guna2TextBox3.SelectedText = "";
-            guna2TextBox3.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2TextBox3.Size = new Size(373, 60);
-            guna2TextBox3.TabIndex = 6;
-            guna2TextBox3.UseSystemPasswordChar = true;
-            // 
             // FormDangKy
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -259,11 +265,11 @@
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txt_repassword;
+        private Guna.UI2.WinForms.Guna2CheckBox cb_policy;
+        private Guna.UI2.WinForms.Guna2GradientButton btn_register;
+        private Guna.UI2.WinForms.Guna2TextBox txt_password;
+        private Guna.UI2.WinForms.Guna2TextBox txt_username;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
     }
