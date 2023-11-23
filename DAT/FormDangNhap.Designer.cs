@@ -75,11 +75,12 @@
             guna2Panel1.BackColor = Color.Transparent;
             guna2Panel1.BackgroundImage = (Image)resources.GetObject("guna2Panel1.BackgroundImage");
             guna2Panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            guna2Panel1.Controls.Add(guna2HtmlLabel3);
             guna2Panel1.Controls.Add(guna2Panel2);
             guna2Panel1.CustomizableEdges = customizableEdges18;
             guna2Panel1.ImeMode = ImeMode.NoControl;
-            guna2Panel1.Location = new Point(1, -10);
-            guna2Panel1.Margin = new Padding(4, 5, 4, 5);
+            guna2Panel1.Location = new Point(1, -13);
+            guna2Panel1.Margin = new Padding(5, 6, 5, 6);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges19;
             guna2Panel1.Size = new Size(1220, 768);
@@ -104,14 +105,14 @@
             guna2Panel2.Controls.Add(guna2HtmlLabel1);
             guna2Panel2.CustomizableEdges = customizableEdges16;
             guna2Panel2.FillColor = Color.White;
-            guna2Panel2.Location = new Point(390, 70);
-            guna2Panel2.Margin = new Padding(4, 5, 4, 5);
+            guna2Panel2.Location = new Point(507, 90);
+            guna2Panel2.Margin = new Padding(5, 6, 5, 6);
             guna2Panel2.Name = "guna2Panel2";
             guna2Panel2.ShadowDecoration.BorderRadius = 20;
             guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges17;
             guna2Panel2.ShadowDecoration.Enabled = true;
             guna2Panel2.ShadowDecoration.Shadow = new Padding(8);
-            guna2Panel2.Size = new Size(474, 632);
+            guna2Panel2.Size = new Size(616, 809);
             guna2Panel2.TabIndex = 0;
             // 
             // pic_hienmatkhau4
@@ -213,7 +214,7 @@
             guna2CheckBox1.Location = new Point(61, 338);
             guna2CheckBox1.Margin = new Padding(4, 5, 4, 5);
             guna2CheckBox1.Name = "guna2CheckBox1";
-            guna2CheckBox1.Size = new Size(100, 29);
+            guna2CheckBox1.Size = new Size(131, 36);
             guna2CheckBox1.TabIndex = 5;
             guna2CheckBox1.Text = "Ghi nhớ";
             guna2CheckBox1.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
@@ -314,25 +315,27 @@
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Verdana", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2HtmlLabel1.Location = new Point(116, 20);
-            guna2HtmlLabel1.Margin = new Padding(4, 5, 4, 5);
+            guna2HtmlLabel1.Location = new Point(151, 26);
+            guna2HtmlLabel1.Margin = new Padding(5, 6, 5, 6);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(255, 51);
+            guna2HtmlLabel1.Size = new Size(334, 67);
             guna2HtmlLabel1.TabIndex = 0;
             guna2HtmlLabel1.Text = "ĐĂNG NHẬP";
             // 
             // FormDangNhap
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1220, 758);
+            ClientSize = new Size(1586, 970);
             Controls.Add(guna2Panel1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            Margin = new Padding(4, 4, 4, 4);
             Name = "FormDangNhap";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormDangNhap";
             Load += FormDangNhap_Load;
             guna2Panel1.ResumeLayout(false);
+            guna2Panel1.PerformLayout();
             guna2Panel2.ResumeLayout(false);
             guna2Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pic_hienmatkhau4).EndInit();
