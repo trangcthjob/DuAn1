@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DAT.FormSinhVien
+namespace DAT.FormGiangVien
 {
-    public partial class UControl_Bangdiem : UserControl
+    public partial class FrmGiangVien : Form
     {
-        public UControl_Bangdiem()
+        public FrmGiangVien()
         {
             InitializeComponent();
         }
