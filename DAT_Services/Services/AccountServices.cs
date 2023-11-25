@@ -18,7 +18,7 @@ namespace DAT_Services.Services
         {
         }
 
-        public bool ChangePassword(string username, string password, string newpassword, string renewpassword)
+        public string ChangePassword(string username, string password, string newpassword, string renewpassword)
         {
             return _accountRepository.ChangePassword(username, password, newpassword, renewpassword);
         }

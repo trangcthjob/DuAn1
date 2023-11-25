@@ -41,6 +41,14 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             label3 = new Label();
             label2 = new Label();
             txt_matkhauhientai = new Guna.UI2.WinForms.Guna2TextBox();
@@ -52,8 +60,16 @@
             pic_hienmatkhau = new Guna.UI2.WinForms.Guna2PictureBox();
             txt_matkhaumoi = new Guna.UI2.WinForms.Guna2TextBox();
             txt_matkhaumoi2 = new Guna.UI2.WinForms.Guna2TextBox();
+            pic_anmatkhau2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            pic_hienmatkhau2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            pic_hienmatkhau3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            pic_anmatkhau3 = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)pic_anmatkhau).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pic_hienmatkhau).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic_anmatkhau2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic_hienmatkhau2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic_hienmatkhau3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic_anmatkhau3).BeginInit();
             SuspendLayout();
             // 
             // label3
@@ -223,11 +239,71 @@
             txt_matkhaumoi2.TabIndex = 24;
             txt_matkhaumoi2.UseSystemPasswordChar = true;
             // 
+            // pic_anmatkhau2
+            // 
+            pic_anmatkhau2.CustomizableEdges = customizableEdges13;
+            pic_anmatkhau2.Image = (Image)resources.GetObject("pic_anmatkhau2.Image");
+            pic_anmatkhau2.ImageRotate = 0F;
+            pic_anmatkhau2.Location = new Point(487, 226);
+            pic_anmatkhau2.Name = "pic_anmatkhau2";
+            pic_anmatkhau2.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            pic_anmatkhau2.Size = new Size(27, 26);
+            pic_anmatkhau2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pic_anmatkhau2.TabIndex = 25;
+            pic_anmatkhau2.TabStop = false;
+            pic_anmatkhau2.Click += pic_anmatkhau2_Click;
+            // 
+            // pic_hienmatkhau2
+            // 
+            pic_hienmatkhau2.CustomizableEdges = customizableEdges15;
+            pic_hienmatkhau2.Image = (Image)resources.GetObject("pic_hienmatkhau2.Image");
+            pic_hienmatkhau2.ImageRotate = 0F;
+            pic_hienmatkhau2.Location = new Point(487, 226);
+            pic_hienmatkhau2.Name = "pic_hienmatkhau2";
+            pic_hienmatkhau2.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            pic_hienmatkhau2.Size = new Size(27, 26);
+            pic_hienmatkhau2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pic_hienmatkhau2.TabIndex = 26;
+            pic_hienmatkhau2.TabStop = false;
+            pic_hienmatkhau2.Click += pic_hienmatkhau2_Click;
+            // 
+            // pic_hienmatkhau3
+            // 
+            pic_hienmatkhau3.CustomizableEdges = customizableEdges17;
+            pic_hienmatkhau3.Image = (Image)resources.GetObject("pic_hienmatkhau3.Image");
+            pic_hienmatkhau3.ImageRotate = 0F;
+            pic_hienmatkhau3.Location = new Point(487, 345);
+            pic_hienmatkhau3.Name = "pic_hienmatkhau3";
+            pic_hienmatkhau3.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            pic_hienmatkhau3.Size = new Size(27, 26);
+            pic_hienmatkhau3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pic_hienmatkhau3.TabIndex = 27;
+            pic_hienmatkhau3.TabStop = false;
+            pic_hienmatkhau3.Click += pic_hienmatkhau3_Click;
+            // 
+            // pic_anmatkhau3
+            // 
+            pic_anmatkhau3.CustomizableEdges = customizableEdges19;
+            pic_anmatkhau3.Image = (Image)resources.GetObject("pic_anmatkhau3.Image");
+            pic_anmatkhau3.ImageRotate = 0F;
+            pic_anmatkhau3.Location = new Point(487, 345);
+            pic_anmatkhau3.Name = "pic_anmatkhau3";
+            pic_anmatkhau3.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            pic_anmatkhau3.Size = new Size(27, 26);
+            pic_anmatkhau3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pic_anmatkhau3.TabIndex = 28;
+            pic_anmatkhau3.TabStop = false;
+            pic_anmatkhau3.Click += pic_anmatkhau3_Click;
+            // 
             // FormDoiMatKhau
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(980, 559);
+            Controls.Add(pic_hienmatkhau3);
+            Controls.Add(pic_anmatkhau3);
+            Controls.Add(pic_hienmatkhau2);
+            Controls.Add(pic_anmatkhau2);
             Controls.Add(pic_hienmatkhau);
             Controls.Add(txt_matkhaumoi2);
             Controls.Add(txt_matkhaumoi);
@@ -244,6 +320,10 @@
             Text = "FormDoiMauKhau";
             ((System.ComponentModel.ISupportInitialize)pic_anmatkhau).EndInit();
             ((System.ComponentModel.ISupportInitialize)pic_hienmatkhau).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_anmatkhau2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_hienmatkhau2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_hienmatkhau3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_anmatkhau3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -260,5 +340,9 @@
         private Guna.UI2.WinForms.Guna2PictureBox pic_hienmatkhau;
         private Guna.UI2.WinForms.Guna2TextBox txt_matkhaumoi;
         private Guna.UI2.WinForms.Guna2TextBox txt_matkhaumoi2;
+        private Guna.UI2.WinForms.Guna2PictureBox pic_anmatkhau2;
+        private Guna.UI2.WinForms.Guna2PictureBox pic_hienmatkhau2;
+        private Guna.UI2.WinForms.Guna2PictureBox pic_hienmatkhau3;
+        private Guna.UI2.WinForms.Guna2PictureBox pic_anmatkhau3;
     }
 }

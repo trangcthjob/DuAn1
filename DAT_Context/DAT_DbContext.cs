@@ -27,7 +27,7 @@ namespace DAT_Context
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             /// Chuỗi kết nối tới database
-            optionsBuilder.UseSqlServer(@"Server=LAPTOPASUSTUFGA\SQLEXPRESS;Database=DAT_QLSV;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer(@"Server=MSI\SQLEXPRESS;Database=DAT_QLSV;Trusted_Connection=True;");
             base.OnConfiguring(optionsBuilder);
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

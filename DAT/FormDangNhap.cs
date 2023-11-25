@@ -39,7 +39,7 @@ namespace DAT
         private void btn_dangnhap_Click(object sender, EventArgs e)
         {
             // Đăng nhập
-            if (_accountServices.Login(txt_username.Text,txt_matkhau.Text))
+            if (_accountServices.Login(txt_username.Text, txt_matkhau.Text))
             {
                 // Hiện trang chủ
                 FormTrangchu formTrangChu = new FormTrangchu();
@@ -53,7 +53,26 @@ namespace DAT
             else
             {
                 //Thông tin tài khoản mật khẩu không chính xác
-                MessageBox.Show("Thông tin tài khoản mật khẩu không chính xác","Thông báo");
+                MessageBox.Show("Thông tin tài khoản mật khẩu không chính xác", "Thông báo");
+            }
+        }
+
+        private void pic_anmatkhau4_Click(object sender, EventArgs e)
+        {
+            if (!txt_matkhau.UseSystemPasswordChar)
+            {
+                pic_hienmatkhau4.BringToFront();
+                txt_matkhau.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void pic_hienmatkhau4_Click(object sender, EventArgs e)
+        {
+            if (txt_matkhau.UseSystemPasswordChar)
+            {
+                txt_matkhau.PasswordChar = '\0';
+                pic_anmatkhau4.BringToFront();
+                txt_matkhau.UseSystemPasswordChar = false;
             }
         }
     }

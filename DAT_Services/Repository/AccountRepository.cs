@@ -19,7 +19,7 @@ namespace DAT_Services.Repository
                 _context = new DAT_DbContext();
         }
 
-        public bool ChangePassword(string username, string password, string newpassword, string renewpassword)
+        public string ChangePassword(string username, string password, string newpassword, string renewpassword)
         {
             // đổi mật khẩu
             // nếu mật khẩu cũ không đúng thì thông báo lỗi
@@ -31,20 +31,19 @@ namespace DAT_Services.Repository
                 var account = _context.Accounts.FirstOrDefault(c => c.UserName == username && !c.IsDeleted);
                 if (account.Password != password)
                 {
-                    throw new Exception("Mật khẩu cũ không đúng");
+                   return "Mật khẩu cũ không đúng";
                 }
                 if (!newpassword.Equals(renewpassword))
                 {
-                    throw new Exception("Mật khẩu mới không trùng khớp");
+                    return ("Mật khẩu mới không trùng khớp");
                 }
                 account.Password = newpassword;
                 _context.Entry(account).State = EntityState.Modified;
                 _context.SaveChanges();
-                return true;
+                return "Thay đổi mật khẩu thành công";
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
         }

@@ -20,6 +20,6 @@ namespace DAT_Services.IServices
         // Sửa thông tin tài khoản
         public bool EditAccount(Account account);
         // đổi mật khẩu
-        public bool ChangePassword(string username, string password, string newpassword, string renewpassword);
+        public string ChangePassword(string username, string password, string newpassword, string renewpassword);
     }
 }

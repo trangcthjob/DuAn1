@@ -47,13 +47,45 @@ namespace DAT
         private void btn_luu_Click(object sender, EventArgs e)
         {
             // Đổi mật khẩu
-            if (_accountServices.ChangePassword(Username, txt_matkhauhientai.Text, txt_matkhaumoi.Text, txt_matkhaumoi2.Text))
+            var reusult = _accountServices.ChangePassword(Username, txt_matkhauhientai.Text, txt_matkhaumoi.Text, txt_matkhaumoi2.Text);
+            MessageBox.Show(reusult, "Thông báo");
+        }
+
+        private void pic_anmatkhau2_Click(object sender, EventArgs e)
+        {
+            if (!txt_matkhaumoi.UseSystemPasswordChar)
             {
-                MessageBox.Show("Đổi mật khẩu thành công", "Thông báo");
+                pic_hienmatkhau2.BringToFront();
+                txt_matkhaumoi.UseSystemPasswordChar = true;
             }
-            else
+        }
+
+        private void pic_hienmatkhau2_Click(object sender, EventArgs e)
+        {
+            if (txt_matkhaumoi.UseSystemPasswordChar)
             {
-                MessageBox.Show("Mật khẩu hiện tại không chính xác", "Thông báo");
+                txt_matkhaumoi.PasswordChar = '\0';
+                pic_anmatkhau2.BringToFront();
+                txt_matkhaumoi.UseSystemPasswordChar = false;
+            }
+        }
+
+        private void pic_anmatkhau3_Click(object sender, EventArgs e)
+        {
+            if (!txt_matkhaumoi2.UseSystemPasswordChar)
+            {
+                pic_hienmatkhau3.BringToFront();
+                txt_matkhaumoi2.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void pic_hienmatkhau3_Click(object sender, EventArgs e)
+        {
+            if (txt_matkhaumoi2.UseSystemPasswordChar)
+            {
+                txt_matkhaumoi2.PasswordChar = '\0';
+                pic_anmatkhau3.BringToFront();
+                txt_matkhaumoi2.UseSystemPasswordChar = false;
             }
         }
     }
