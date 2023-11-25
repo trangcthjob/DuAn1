@@ -503,7 +503,6 @@
         }
 
         #endregion
-        private FormSinhVien.ThongbaoSV ThongBao;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel pn_LichHoc;
         private Guna.UI2.WinForms.Guna2GradientPanel pn_fromSV;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
