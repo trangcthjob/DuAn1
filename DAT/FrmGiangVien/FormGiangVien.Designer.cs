@@ -1,6 +1,6 @@
 ﻿namespace DAT.FrmGiangVien
 {
-    partial class FrmGiangVien
+    partial class FormGiangVien
     {
         /// <summary>
         /// Required designer variable.

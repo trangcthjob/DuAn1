@@ -8,13 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DAT.FrmSinhVien
+namespace DAT
 {
-    public partial class FrmSinhVien : Form
+    public partial class FormQuyen : Form
     {
-        public FrmSinhVien()
+        public FormQuyen()
         {
             InitializeComponent();
         }
+
+
     }
 }
