@@ -1,6 +1,6 @@
 ﻿namespace DAT.FrmSinhVien
 {
-    partial class FrmSinhVien
+    partial class FormSinhVien
     {
         /// <summary>
         /// Required designer variable.

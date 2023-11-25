@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DAT.FrmGiangVien
+namespace DAT.FrmSinhVien
 {
-    public partial class FrmGiangVien : Form
+    public partial class FormSinhVien : Form
     {
-        public FrmGiangVien()
+        public FormSinhVien()
         {
             InitializeComponent();
         }
