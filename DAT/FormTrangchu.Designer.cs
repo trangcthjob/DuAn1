@@ -88,8 +88,18 @@
             guna2CustomGradientPanel1.FillColor4 = Color.FromArgb(94, 148, 255);
             guna2CustomGradientPanel1.Location = new Point(12, 12);
             guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
+<<<<<<< Updated upstream
             guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges30;
             guna2CustomGradientPanel1.Size = new Size(163, 647);
+=======
+<<<<<<< HEAD
+            guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            guna2CustomGradientPanel1.Size = new Size(130, 518);
+=======
+            guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges30;
+            guna2CustomGradientPanel1.Size = new Size(163, 647);
+>>>>>>> 549faeaeda1e7ce00d56ce6f13425b8dbca3d296
+>>>>>>> Stashed changes
             guna2CustomGradientPanel1.TabIndex = 0;
             // 
             // guna2CirclePictureBox1
@@ -110,14 +120,46 @@
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.ForeColor = Color.Transparent;
+<<<<<<< Updated upstream
             guna2HtmlLabel1.Location = new Point(30, 8);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             guna2HtmlLabel1.Size = new Size(125, 27);
+=======
+<<<<<<< HEAD
+            guna2HtmlLabel1.Location = new Point(14, 6);
+            guna2HtmlLabel1.Margin = new Padding(2, 2, 2, 2);
+            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            guna2HtmlLabel1.Size = new Size(108, 22);
+=======
+            guna2HtmlLabel1.Location = new Point(30, 8);
+            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            guna2HtmlLabel1.Size = new Size(125, 27);
+>>>>>>> 549faeaeda1e7ce00d56ce6f13425b8dbca3d296
+>>>>>>> Stashed changes
             guna2HtmlLabel1.TabIndex = 6;
             guna2HtmlLabel1.Text = "QuanLyLichHoc";
             // 
             // pic_avatar
             // 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+            guna2PictureBox1.BackColor = Color.Transparent;
+            guna2PictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            guna2PictureBox1.BorderRadius = 50;
+            guna2PictureBox1.CustomizableEdges = customizableEdges1;
+            guna2PictureBox1.Image = (Image)resources.GetObject("guna2PictureBox1.Image");
+            guna2PictureBox1.ImageRotate = 0F;
+            guna2PictureBox1.Location = new Point(19, 34);
+            guna2PictureBox1.Margin = new Padding(3, 4, 3, 4);
+            guna2PictureBox1.Name = "guna2PictureBox1";
+            guna2PictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2PictureBox1.Size = new Size(94, 86);
+            guna2PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            guna2PictureBox1.TabIndex = 5;
+            guna2PictureBox1.TabStop = false;
+=======
+>>>>>>> Stashed changes
             pic_avatar.BackColor = Color.Transparent;
             pic_avatar.BackgroundImageLayout = ImageLayout.Stretch;
             pic_avatar.BorderRadius = 50;
@@ -133,6 +175,10 @@
             pic_avatar.TabIndex = 5;
             pic_avatar.TabStop = false;
             pic_avatar.Click += guna2PictureBox1_Click;
+<<<<<<< Updated upstream
+=======
+>>>>>>> 549faeaeda1e7ce00d56ce6f13425b8dbca3d296
+>>>>>>> Stashed changes
             // 
             // guna2GradientButton5
             // 
@@ -160,8 +206,18 @@
             guna2GradientButton5.ImageSize = new Size(30, 30);
             guna2GradientButton5.Location = new Point(16, 444);
             guna2GradientButton5.Name = "guna2GradientButton5";
+<<<<<<< Updated upstream
             guna2GradientButton5.ShadowDecoration.CustomizableEdges = customizableEdges20;
             guna2GradientButton5.Size = new Size(136, 72);
+=======
+<<<<<<< HEAD
+            guna2GradientButton5.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2GradientButton5.Size = new Size(109, 58);
+=======
+            guna2GradientButton5.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            guna2GradientButton5.Size = new Size(136, 72);
+>>>>>>> 549faeaeda1e7ce00d56ce6f13425b8dbca3d296
+>>>>>>> Stashed changes
             guna2GradientButton5.TabIndex = 4;
             guna2GradientButton5.Text = "Cài đặt";
             guna2GradientButton5.TextAlign = HorizontalAlignment.Left;
@@ -192,8 +248,18 @@
             guna2GradientButton4.ImageSize = new Size(30, 30);
             guna2GradientButton4.Location = new Point(17, 353);
             guna2GradientButton4.Name = "guna2GradientButton4";
+<<<<<<< Updated upstream
             guna2GradientButton4.ShadowDecoration.CustomizableEdges = customizableEdges22;
             guna2GradientButton4.Size = new Size(135, 72);
+=======
+<<<<<<< HEAD
+            guna2GradientButton4.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            guna2GradientButton4.Size = new Size(108, 58);
+=======
+            guna2GradientButton4.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            guna2GradientButton4.Size = new Size(135, 72);
+>>>>>>> 549faeaeda1e7ce00d56ce6f13425b8dbca3d296
+>>>>>>> Stashed changes
             guna2GradientButton4.TabIndex = 3;
             guna2GradientButton4.Text = "     C.Ngành";
             // 
@@ -223,8 +289,18 @@
             guna2GradientButton3.ImageSize = new Size(30, 30);
             guna2GradientButton3.Location = new Point(16, 548);
             guna2GradientButton3.Name = "guna2GradientButton3";
+<<<<<<< Updated upstream
             guna2GradientButton3.ShadowDecoration.CustomizableEdges = customizableEdges24;
             guna2GradientButton3.Size = new Size(136, 72);
+=======
+<<<<<<< HEAD
+            guna2GradientButton3.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            guna2GradientButton3.Size = new Size(109, 58);
+=======
+            guna2GradientButton3.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            guna2GradientButton3.Size = new Size(136, 72);
+>>>>>>> 549faeaeda1e7ce00d56ce6f13425b8dbca3d296
+>>>>>>> Stashed changes
             guna2GradientButton3.TabIndex = 2;
             guna2GradientButton3.Text = "Đăng xuất";
             guna2GradientButton3.TextAlign = HorizontalAlignment.Right;
@@ -255,8 +331,18 @@
             guna2GradientButton2.ImageSize = new Size(28, 28);
             guna2GradientButton2.Location = new Point(16, 255);
             guna2GradientButton2.Name = "guna2GradientButton2";
+<<<<<<< Updated upstream
             guna2GradientButton2.ShadowDecoration.CustomizableEdges = customizableEdges26;
             guna2GradientButton2.Size = new Size(136, 72);
+=======
+<<<<<<< HEAD
+            guna2GradientButton2.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            guna2GradientButton2.Size = new Size(109, 58);
+=======
+            guna2GradientButton2.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            guna2GradientButton2.Size = new Size(136, 72);
+>>>>>>> 549faeaeda1e7ce00d56ce6f13425b8dbca3d296
+>>>>>>> Stashed changes
             guna2GradientButton2.TabIndex = 1;
             guna2GradientButton2.Text = "Lịch học";
             guna2GradientButton2.TextAlign = HorizontalAlignment.Left;
@@ -287,8 +373,18 @@
             btnHome.ImageSize = new Size(30, 30);
             btnHome.Location = new Point(16, 158);
             btnHome.Name = "btnHome";
+<<<<<<< Updated upstream
             btnHome.ShadowDecoration.CustomizableEdges = customizableEdges28;
             btnHome.Size = new Size(136, 72);
+=======
+<<<<<<< HEAD
+            btnHome.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            btnHome.Size = new Size(109, 58);
+=======
+            btnHome.ShadowDecoration.CustomizableEdges = customizableEdges28;
+            btnHome.Size = new Size(136, 72);
+>>>>>>> 549faeaeda1e7ce00d56ce6f13425b8dbca3d296
+>>>>>>> Stashed changes
             btnHome.TabIndex = 0;
             btnHome.Text = "Trang chủ";
             btnHome.TextAlign = HorizontalAlignment.Right;
@@ -309,7 +405,16 @@
             ClientSize = new Size(1201, 671);
             Controls.Add(panelShow);
             Controls.Add(panel1);
+<<<<<<< Updated upstream
             FormBorderStyle = FormBorderStyle.None;
+=======
+<<<<<<< HEAD
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            Margin = new Padding(2, 2, 2, 2);
+=======
+            FormBorderStyle = FormBorderStyle.None;
+>>>>>>> 549faeaeda1e7ce00d56ce6f13425b8dbca3d296
+>>>>>>> Stashed changes
             Name = "FormTrangchu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Trang chủ";
@@ -334,6 +439,14 @@
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
         private Guna.UI2.WinForms.Guna2PictureBox pic_avatar;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+<<<<<<< Updated upstream
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+=======
+<<<<<<< HEAD
+        private Guna.UI2.WinForms.Guna2GradientButton btnHome;
+=======
+        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+>>>>>>> 549faeaeda1e7ce00d56ce6f13425b8dbca3d296
+>>>>>>> Stashed changes
     }
 }

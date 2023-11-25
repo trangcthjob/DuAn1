@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DAT
+namespace DAT.FormSinhVien
 {
-    public partial class FormCa : Form
+    public partial class Bangdiemtheoky : UserControl
     {
-        public FormCa()
+        public Bangdiemtheoky()
         {
             InitializeComponent();
-        }
-
-        private void guna2CustomGradientPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
