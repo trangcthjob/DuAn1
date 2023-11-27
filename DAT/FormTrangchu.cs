@@ -60,5 +60,20 @@ namespace DAT
                 pic_avatar.Image = new Bitmap(account.Avatar);
             }
         }
+
+        private void btn_sinhvien_Click(object sender, EventArgs e)
+        {
+            // mở form sinh viên
+            FormSinhVien formSinhVien = new FormSinhVien();
+            OpenForm(formSinhVien);
+
+        }
+
+        private void btn_GiangVien_Click(object sender, EventArgs e)
+        {
+            // mở form giảng viên
+            FormGiangVien formGiangVien = new FormGiangVien();
+            OpenForm(formGiangVien);
+        }
     }
 }

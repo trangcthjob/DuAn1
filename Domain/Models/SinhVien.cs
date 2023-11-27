@@ -19,6 +19,8 @@ namespace Domain.Models
         public string DiaChi { get; set; }
         public ChuyenNganh? ChuyenNganh { get; set; }
         public Guid? ChuyenNganhId { get; set; }      
+        // avatar của sinh viên
+        public string? Avatar { get; set; }
 
     }
 }

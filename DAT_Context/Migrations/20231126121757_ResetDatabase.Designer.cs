@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DAT_Context.Migrations
 {
     [DbContext(typeof(DAT_DbContext))]
-    [Migration("20231118143735_add more Entity")]
-    partial class addmoreEntity
+    [Migration("20231126121757_ResetDatabase")]
+    partial class ResetDatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -45,12 +45,14 @@ namespace DAT_Context.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("Avatar")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("DisplayName")
-                        .IsRequired()
+                        .IsUnicode(true)
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Gender")
@@ -64,15 +66,13 @@ namespace DAT_Context.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Phone")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("RolesId")
+                    b.Property<Guid?>("RolesId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("UserName")
                         .IsRequired()
-                        .IsUnicode(true)
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -105,7 +105,7 @@ namespace DAT_Context.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Ca");
+                    b.ToTable("Cas");
                 });
 
             modelBuilder.Entity("Domain.Models.ChuyenNganh", b =>
@@ -133,7 +133,7 @@ namespace DAT_Context.Migrations
 
                     b.HasIndex("ChuyenNganhChaId");
 
-                    b.ToTable("ChuyenNganh");
+                    b.ToTable("ChuyenNganhs");
                 });
 
             modelBuilder.Entity("Domain.Models.DiemDanh", b =>
@@ -163,7 +163,7 @@ namespace DAT_Context.Migrations
 
                     b.HasIndex("LichHocId");
 
-                    b.ToTable("DiemDanh");
+                    b.ToTable("DiemDanhs");
                 });
 
             modelBuilder.Entity("Domain.Models.GiangVien", b =>
@@ -206,7 +206,7 @@ namespace DAT_Context.Migrations
 
                     b.HasIndex("ChuyenNganhId");
 
-                    b.ToTable("GiangVien");
+                    b.ToTable("GiangViens");
                 });
 
             modelBuilder.Entity("Domain.Models.KiHoc", b =>
@@ -231,7 +231,7 @@ namespace DAT_Context.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("KiHoc");
+                    b.ToTable("KiHocs");
                 });
 
             modelBuilder.Entity("Domain.Models.LichHoc", b =>
@@ -275,7 +275,7 @@ namespace DAT_Context.Migrations
 
                     b.HasIndex("MonHocId");
 
-                    b.ToTable("LichHoc");
+                    b.ToTable("LichHocs");
                 });
 
             modelBuilder.Entity("Domain.Models.Lop", b =>
@@ -298,7 +298,7 @@ namespace DAT_Context.Migrations
 
                     b.HasIndex("ChuyenNganhId");
 
-                    b.ToTable("Lop");
+                    b.ToTable("Lops");
                 });
 
             modelBuilder.Entity("Domain.Models.MonHoc", b =>
@@ -320,7 +320,7 @@ namespace DAT_Context.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("MonHoc");
+                    b.ToTable("MonHocs");
                 });
 
             modelBuilder.Entity("Domain.Models.Roles", b =>
@@ -354,6 +354,9 @@ namespace DAT_Context.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Avatar")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid?>("ChuyenNganhId")
                         .HasColumnType("uniqueidentifier");
@@ -391,7 +394,7 @@ namespace DAT_Context.Migrations
 
                     b.HasIndex("ChuyenNganhId");
 
-                    b.ToTable("SinhVien");
+                    b.ToTable("SinhViens");
                 });
 
             modelBuilder.Entity("KiHocLop", b =>
@@ -428,9 +431,7 @@ namespace DAT_Context.Migrations
                 {
                     b.HasOne("Domain.Models.Roles", "Roles")
                         .WithMany()
-                        .HasForeignKey("RolesId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("RolesId");
 
                     b.Navigation("Roles");
                 });

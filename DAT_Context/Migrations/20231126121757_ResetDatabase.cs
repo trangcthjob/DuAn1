@@ -5,22 +5,12 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DAT_Context.Migrations
 {
-    public partial class addmoreEntity : Migration
+    public partial class ResetDatabase : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AlterColumn<string>(
-                name: "DisplayName",
-                table: "Accounts",
-                type: "nvarchar(max)",
-                nullable: false,
-                defaultValue: "",
-                oldClrType: typeof(string),
-                oldType: "nvarchar(max)",
-                oldNullable: true);
-
             migrationBuilder.CreateTable(
-                name: "Ca",
+                name: "Cas",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -31,11 +21,11 @@ namespace DAT_Context.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Ca", x => x.Id);
+                    table.PrimaryKey("PK_Cas", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
-                name: "ChuyenNganh",
+                name: "ChuyenNganhs",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -46,16 +36,16 @@ namespace DAT_Context.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ChuyenNganh", x => x.Id);
+                    table.PrimaryKey("PK_ChuyenNganhs", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_ChuyenNganh_ChuyenNganh_ChuyenNganhChaId",
+                        name: "FK_ChuyenNganhs_ChuyenNganhs_ChuyenNganhChaId",
                         column: x => x.ChuyenNganhChaId,
-                        principalTable: "ChuyenNganh",
+                        principalTable: "ChuyenNganhs",
                         principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
-                name: "KiHoc",
+                name: "KiHocs",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -66,11 +56,11 @@ namespace DAT_Context.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_KiHoc", x => x.Id);
+                    table.PrimaryKey("PK_KiHocs", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
-                name: "MonHoc",
+                name: "MonHocs",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -80,11 +70,26 @@ namespace DAT_Context.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_MonHoc", x => x.Id);
+                    table.PrimaryKey("PK_MonHocs", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
-                name: "GiangVien",
+                name: "Roles",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    DisplayName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Code = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IsDefault = table.Column<bool>(type: "bit", nullable: false),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Roles", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "GiangViens",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -99,16 +104,16 @@ namespace DAT_Context.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_GiangVien", x => x.Id);
+                    table.PrimaryKey("PK_GiangViens", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_GiangVien_ChuyenNganh_ChuyenNganhId",
+                        name: "FK_GiangViens_ChuyenNganhs_ChuyenNganhId",
                         column: x => x.ChuyenNganhId,
-                        principalTable: "ChuyenNganh",
+                        principalTable: "ChuyenNganhs",
                         principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
-                name: "Lop",
+                name: "Lops",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -118,16 +123,16 @@ namespace DAT_Context.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Lop", x => x.Id);
+                    table.PrimaryKey("PK_Lops", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Lop_ChuyenNganh_ChuyenNganhId",
+                        name: "FK_Lops_ChuyenNganhs_ChuyenNganhId",
                         column: x => x.ChuyenNganhId,
-                        principalTable: "ChuyenNganh",
+                        principalTable: "ChuyenNganhs",
                         principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
-                name: "SinhVien",
+                name: "SinhViens",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -139,15 +144,16 @@ namespace DAT_Context.Migrations
                     SoDienThoai = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DiaChi = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ChuyenNganhId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    Avatar = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_SinhVien", x => x.Id);
+                    table.PrimaryKey("PK_SinhViens", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_SinhVien_ChuyenNganh_ChuyenNganhId",
+                        name: "FK_SinhViens_ChuyenNganhs_ChuyenNganhId",
                         column: x => x.ChuyenNganhId,
-                        principalTable: "ChuyenNganh",
+                        principalTable: "ChuyenNganhs",
                         principalColumn: "Id");
                 });
 
@@ -162,17 +168,42 @@ namespace DAT_Context.Migrations
                 {
                     table.PrimaryKey("PK_ChuyenNganhMonHoc", x => new { x.ChuyenNganhsId, x.MonHocsId });
                     table.ForeignKey(
-                        name: "FK_ChuyenNganhMonHoc_ChuyenNganh_ChuyenNganhsId",
+                        name: "FK_ChuyenNganhMonHoc_ChuyenNganhs_ChuyenNganhsId",
                         column: x => x.ChuyenNganhsId,
-                        principalTable: "ChuyenNganh",
+                        principalTable: "ChuyenNganhs",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_ChuyenNganhMonHoc_MonHoc_MonHocsId",
+                        name: "FK_ChuyenNganhMonHoc_MonHocs_MonHocsId",
                         column: x => x.MonHocsId,
-                        principalTable: "MonHoc",
+                        principalTable: "MonHocs",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Accounts",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    DisplayName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Phone = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Gender = table.Column<int>(type: "int", nullable: false),
+                    RolesId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    Avatar = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Accounts", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Accounts_Roles_RolesId",
+                        column: x => x.RolesId,
+                        principalTable: "Roles",
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -186,21 +217,21 @@ namespace DAT_Context.Migrations
                 {
                     table.PrimaryKey("PK_KiHocLop", x => new { x.KiHocsId, x.LopsId });
                     table.ForeignKey(
-                        name: "FK_KiHocLop_KiHoc_KiHocsId",
+                        name: "FK_KiHocLop_KiHocs_KiHocsId",
                         column: x => x.KiHocsId,
-                        principalTable: "KiHoc",
+                        principalTable: "KiHocs",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_KiHocLop_Lop_LopsId",
+                        name: "FK_KiHocLop_Lops_LopsId",
                         column: x => x.LopsId,
-                        principalTable: "Lop",
+                        principalTable: "Lops",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
-                name: "LichHoc",
+                name: "LichHocs",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -215,34 +246,34 @@ namespace DAT_Context.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_LichHoc", x => x.Id);
+                    table.PrimaryKey("PK_LichHocs", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_LichHoc_Ca_CaID",
+                        name: "FK_LichHocs_Cas_CaID",
                         column: x => x.CaID,
-                        principalTable: "Ca",
+                        principalTable: "Cas",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_LichHoc_GiangVien_GiangVienId",
+                        name: "FK_LichHocs_GiangViens_GiangVienId",
                         column: x => x.GiangVienId,
-                        principalTable: "GiangVien",
+                        principalTable: "GiangViens",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_LichHoc_Lop_LopHocId",
+                        name: "FK_LichHocs_Lops_LopHocId",
                         column: x => x.LopHocId,
-                        principalTable: "Lop",
+                        principalTable: "Lops",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_LichHoc_MonHoc_MonHocId",
+                        name: "FK_LichHocs_MonHocs_MonHocId",
                         column: x => x.MonHocId,
-                        principalTable: "MonHoc",
+                        principalTable: "MonHocs",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
-                name: "DiemDanh",
+                name: "DiemDanhs",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -254,18 +285,18 @@ namespace DAT_Context.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_DiemDanh", x => x.Id);
+                    table.PrimaryKey("PK_DiemDanhs", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_DiemDanh_LichHoc_LichHocId",
+                        name: "FK_DiemDanhs_LichHocs_LichHocId",
                         column: x => x.LichHocId,
-                        principalTable: "LichHoc",
+                        principalTable: "LichHocs",
                         principalColumn: "Id");
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_ChuyenNganh_ChuyenNganhChaId",
-                table: "ChuyenNganh",
-                column: "ChuyenNganhChaId");
+                name: "IX_Accounts_RolesId",
+                table: "Accounts",
+                column: "RolesId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_ChuyenNganhMonHoc_MonHocsId",
@@ -273,13 +304,18 @@ namespace DAT_Context.Migrations
                 column: "MonHocsId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_DiemDanh_LichHocId",
-                table: "DiemDanh",
+                name: "IX_ChuyenNganhs_ChuyenNganhChaId",
+                table: "ChuyenNganhs",
+                column: "ChuyenNganhChaId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_DiemDanhs_LichHocId",
+                table: "DiemDanhs",
                 column: "LichHocId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_GiangVien_ChuyenNganhId",
-                table: "GiangVien",
+                name: "IX_GiangViens_ChuyenNganhId",
+                table: "GiangViens",
                 column: "ChuyenNganhId");
 
             migrationBuilder.CreateIndex(
@@ -288,78 +324,76 @@ namespace DAT_Context.Migrations
                 column: "LopsId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_LichHoc_CaID",
-                table: "LichHoc",
+                name: "IX_LichHocs_CaID",
+                table: "LichHocs",
                 column: "CaID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_LichHoc_GiangVienId",
-                table: "LichHoc",
+                name: "IX_LichHocs_GiangVienId",
+                table: "LichHocs",
                 column: "GiangVienId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_LichHoc_LopHocId",
-                table: "LichHoc",
+                name: "IX_LichHocs_LopHocId",
+                table: "LichHocs",
                 column: "LopHocId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_LichHoc_MonHocId",
-                table: "LichHoc",
+                name: "IX_LichHocs_MonHocId",
+                table: "LichHocs",
                 column: "MonHocId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Lop_ChuyenNganhId",
-                table: "Lop",
+                name: "IX_Lops_ChuyenNganhId",
+                table: "Lops",
                 column: "ChuyenNganhId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_SinhVien_ChuyenNganhId",
-                table: "SinhVien",
+                name: "IX_SinhViens_ChuyenNganhId",
+                table: "SinhViens",
                 column: "ChuyenNganhId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
+                name: "Accounts");
+
+            migrationBuilder.DropTable(
                 name: "ChuyenNganhMonHoc");
 
             migrationBuilder.DropTable(
-                name: "DiemDanh");
+                name: "DiemDanhs");
 
             migrationBuilder.DropTable(
                 name: "KiHocLop");
 
             migrationBuilder.DropTable(
-                name: "SinhVien");
+                name: "SinhViens");
 
             migrationBuilder.DropTable(
-                name: "LichHoc");
+                name: "Roles");
 
             migrationBuilder.DropTable(
-                name: "KiHoc");
+                name: "LichHocs");
 
             migrationBuilder.DropTable(
-                name: "Ca");
+                name: "KiHocs");
 
             migrationBuilder.DropTable(
-                name: "GiangVien");
+                name: "Cas");
 
             migrationBuilder.DropTable(
-                name: "Lop");
+                name: "GiangViens");
 
             migrationBuilder.DropTable(
-                name: "MonHoc");
+                name: "Lops");
 
             migrationBuilder.DropTable(
-                name: "ChuyenNganh");
+                name: "MonHocs");
 
-            migrationBuilder.AlterColumn<string>(
-                name: "DisplayName",
-                table: "Accounts",
-                type: "nvarchar(max)",
-                nullable: true,
-                oldClrType: typeof(string),
-                oldType: "nvarchar(max)");
+            migrationBuilder.DropTable(
+                name: "ChuyenNganhs");
         }
     }
 }

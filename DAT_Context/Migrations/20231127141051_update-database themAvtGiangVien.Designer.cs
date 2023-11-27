@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DAT_Context.Migrations
 {
     [DbContext(typeof(DAT_DbContext))]
-    [Migration("20231123161014_them_avt_account")]
-    partial class them_avt_account
+    [Migration("20231127141051_update-database themAvtGiangVien")]
+    partial class updatedatabasethemAvtGiangVien
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -105,7 +105,7 @@ namespace DAT_Context.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Ca");
+                    b.ToTable("Cas");
                 });
 
             modelBuilder.Entity("Domain.Models.ChuyenNganh", b =>
@@ -133,7 +133,7 @@ namespace DAT_Context.Migrations
 
                     b.HasIndex("ChuyenNganhChaId");
 
-                    b.ToTable("ChuyenNganh");
+                    b.ToTable("ChuyenNganhs");
                 });
 
             modelBuilder.Entity("Domain.Models.DiemDanh", b =>
@@ -163,7 +163,7 @@ namespace DAT_Context.Migrations
 
                     b.HasIndex("LichHocId");
 
-                    b.ToTable("DiemDanh");
+                    b.ToTable("DiemDanhs");
                 });
 
             modelBuilder.Entity("Domain.Models.GiangVien", b =>
@@ -171,6 +171,10 @@ namespace DAT_Context.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Avatar")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid?>("ChuyenNganhId")
                         .HasColumnType("uniqueidentifier");
@@ -206,7 +210,7 @@ namespace DAT_Context.Migrations
 
                     b.HasIndex("ChuyenNganhId");
 
-                    b.ToTable("GiangVien");
+                    b.ToTable("GiangViens");
                 });
 
             modelBuilder.Entity("Domain.Models.KiHoc", b =>
@@ -231,7 +235,7 @@ namespace DAT_Context.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("KiHoc");
+                    b.ToTable("KiHocs");
                 });
 
             modelBuilder.Entity("Domain.Models.LichHoc", b =>
@@ -275,7 +279,7 @@ namespace DAT_Context.Migrations
 
                     b.HasIndex("MonHocId");
 
-                    b.ToTable("LichHoc");
+                    b.ToTable("LichHocs");
                 });
 
             modelBuilder.Entity("Domain.Models.Lop", b =>
@@ -298,7 +302,7 @@ namespace DAT_Context.Migrations
 
                     b.HasIndex("ChuyenNganhId");
 
-                    b.ToTable("Lop");
+                    b.ToTable("Lops");
                 });
 
             modelBuilder.Entity("Domain.Models.MonHoc", b =>
@@ -320,7 +324,7 @@ namespace DAT_Context.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("MonHoc");
+                    b.ToTable("MonHocs");
                 });
 
             modelBuilder.Entity("Domain.Models.Roles", b =>
@@ -354,6 +358,9 @@ namespace DAT_Context.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Avatar")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid?>("ChuyenNganhId")
                         .HasColumnType("uniqueidentifier");
@@ -391,7 +398,7 @@ namespace DAT_Context.Migrations
 
                     b.HasIndex("ChuyenNganhId");
 
-                    b.ToTable("SinhVien");
+                    b.ToTable("SinhViens");
                 });
 
             modelBuilder.Entity("KiHocLop", b =>

@@ -12,15 +12,15 @@ namespace Domain.Models
     {
         public string MaGiangVien { get; set; }
         public string TenGiangVien { get; set; }
-        public DateTime? NgaySinh { get; set; }
+        public DateTime NgaySinh { get; set; }
         public GenderEnum GioiTinh { get; set; }
         public string Email { get; set; }
         public string SoDienThoai { get; set; }
+        public string DiaChi { get; set; }
         // khóa ngoại
         public ChuyenNganh? ChuyenNganh { get; set; }
         public Guid? ChuyenNganhId { get; set; }
-
-        
+        public string Avatar { get; set; }
 
     }
 }

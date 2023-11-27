@@ -39,5 +39,22 @@ namespace DAT_Context
         // ánh xạ các bảng trong database
         public virtual DbSet<Account>? Accounts { get; set; }
         public virtual DbSet<Roles>? Roles { get; set; }
+        public virtual DbSet<SinhVien>? SinhViens { get; set; }
+        // Giảng viên
+        public virtual DbSet<GiangVien>? GiangViens { get; set; }
+        public virtual DbSet<MonHoc>? MonHocs { get; set; }
+        // Chuyên ngành
+        public virtual DbSet<ChuyenNganh>? ChuyenNganhs { get; set; }
+        // Lịch học
+        public virtual DbSet<LichHoc>? LichHocs { get; set; }
+        // Ca
+        public virtual DbSet<Ca>? Cas { get; set; }
+        // Điểm danh
+        public virtual DbSet<DiemDanh>? DiemDanhs { get; set; }
+        // Kì học
+        public virtual DbSet<KiHoc>? KiHocs { get; set; }
+        // Lớp
+        public virtual DbSet<Lop>? Lops { get; set; }
+
     }
 }

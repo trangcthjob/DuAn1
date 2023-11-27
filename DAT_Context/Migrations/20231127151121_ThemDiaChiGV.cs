@@ -4,22 +4,23 @@
 
 namespace DAT_Context.Migrations
 {
-    public partial class them_avt_account : Migration
+    public partial class ThemDiaChiGV : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<string>(
-                name: "Avatar",
-                table: "Accounts",
+                name: "DiaChi",
+                table: "GiangViens",
                 type: "nvarchar(max)",
-                nullable: true);
+                nullable: false,
+                defaultValue: "");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "Avatar",
-                table: "Accounts");
+                name: "DiaChi",
+                table: "GiangViens");
         }
     }
 }

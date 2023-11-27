@@ -4,23 +4,23 @@
 
 namespace DAT_Context.Migrations
 {
-    public partial class Add_IsDefault_TableRoles : Migration
+    public partial class updatedatabasethemAvtGiangVien : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AddColumn<bool>(
-                name: "IsDefault",
-                table: "Roles",
-                type: "bit",
+            migrationBuilder.AddColumn<string>(
+                name: "Avatar",
+                table: "GiangViens",
+                type: "nvarchar(max)",
                 nullable: false,
-                defaultValue: false);
+                defaultValue: "");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "IsDefault",
-                table: "Roles");
+                name: "Avatar",
+                table: "GiangViens");
         }
     }
 }
