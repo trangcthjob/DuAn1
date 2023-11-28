@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DAT.FrmSinhVien
 {
-    public partial class FormSinhVien : Form
+    public partial class FormTrangChuSinhVien : Form
     {
-        public FormSinhVien()
+        public FormTrangChuSinhVien()
         {
             InitializeComponent();
         }
