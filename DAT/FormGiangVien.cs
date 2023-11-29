@@ -17,6 +17,8 @@ namespace DAT
     {
         public readonly IChuyenNganhService _chuyenNganhgService;
         public readonly IGiangVienService _giangVienService;
+        List<ChuyenNganh> listChuyenNganh = new List<ChuyenNganh>();
+        List<GiangVien> listGiangVien = new List<GiangVien>();
         private bool isAddColumn = false;
         public FormGiangVien()
         {
@@ -35,9 +37,19 @@ namespace DAT
             // hiển thị avatar giảng viên lên datagridview
             // hiển thị tên chuyên ngành lên datagridview
             // Lấy danh sách giảng viên
-            List<GiangVien> listGiangVien = _giangVienService.GetListGiangVien();
-            // Lấy danh sách chuyên ngành
-            List<ChuyenNganh> listChuyenNganh = _chuyenNganhgService.GetListChuyenNganh();
+            if (listGiangVien.Count == 0 && listChuyenNganh.Count == 0)
+            {
+                listGiangVien = _giangVienService.GetListGiangVien();
+                // Lấy danh sách chuyên ngành
+                listChuyenNganh = _chuyenNganhgService.GetListChuyenNganh();
+            }
+            
+            listChuyenNganh.Add(new ChuyenNganh()
+            {
+                Id = Guid.Empty,
+                TenChuyenNganh = "Tất cả"
+            });
+
             cb_chuyenNganh.DataSource = listChuyenNganh;
             cb_chuyenNganh.DisplayMember = "TenChuyenNganh";
             cb_chuyenNganh.ValueMember = "Id";
@@ -88,7 +100,7 @@ namespace DAT
             foreach (var item in listGiangVienJoin)
             {
                 // hiển thị avatar giảng viên lên datagridview
-                dgv_GiangVien.Rows.Add(item.Avatar, item.Id,item.MaGiangVien, item.TenGiangVien, item.NgaySinh.ToString("dd/MM/yyyy"), item.GioiTinh, item.DiaChi, item.SoDienThoai, item.Email, item.TenChuyenNganh);
+                dgv_GiangVien.Rows.Add(item.Avatar, item.Id, item.MaGiangVien, item.TenGiangVien, item.NgaySinh.ToString("dd/MM/yyyy"), item.GioiTinh, item.DiaChi, item.SoDienThoai, item.Email, item.TenChuyenNganh);
             }
             // tự dộng co dãn cột
             dgv_GiangVien.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -104,6 +116,10 @@ namespace DAT
             formThemGiangVien.ShowDialog();
             //clear row
             dgv_GiangVien.Rows.Clear();
+            // Lấy danh sách giảng viên
+            listGiangVien = _giangVienService.GetListGiangVien();
+            // Lấy danh sách chuyên ngành
+            listChuyenNganh = _chuyenNganhgService.GetListChuyenNganh();
             //load lại danh sách giảng viên
             FormGiangVien_Load(null, null);
         }
@@ -122,6 +138,10 @@ namespace DAT
                 formUpdateGiangVien.ShowDialog();
                 //clear row
                 dgv_GiangVien.Rows.Clear();
+                // Lấy danh sách giảng viên
+                listGiangVien = _giangVienService.GetListGiangVien();
+                // Lấy danh sách chuyên ngành
+                listChuyenNganh = _chuyenNganhgService.GetListChuyenNganh();
                 //load lại danh sách giảng viên
                 FormGiangVien_Load(null, null);
             }
@@ -162,6 +182,25 @@ namespace DAT
             else
             {
                 MessageBox.Show("Bạn chưa chọn giảng viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void txt_Timkiemgv_TextChanged(object sender, EventArgs e)
+        {
+            listGiangVien = _giangVienService.SearchGiangVien(txt_Timkiemgv.Text, Guid.Parse(cb_chuyenNganh.SelectedValue.ToString()));
+            dgv_GiangVien.Rows.Clear();
+            FormGiangVien_Load(null, null);
+        }
+
+        private void cb_chuyenNganh_SelectedValueChanged(object sender, EventArgs e)
+        {
+
+            if (Guid.TryParse(cb_chuyenNganh.SelectedValue.ToString(), out Guid result))
+            {
+
+                listGiangVien = _giangVienService.SearchGiangVien(txt_Timkiemgv.Text, Guid.Parse(cb_chuyenNganh.SelectedValue.ToString()));
+                dgv_GiangVien.Rows.Clear();
+                FormGiangVien_Load(null, null);
             }
         }
     }

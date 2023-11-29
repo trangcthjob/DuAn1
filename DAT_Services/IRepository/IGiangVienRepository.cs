@@ -17,7 +17,7 @@ namespace DAT_Services.IRepository
         // Xóa giảng viên
         public bool DeleteGiangVien(Guid Id);
         // Tìm kiếm giảng viên
-        public List<GiangVien> SearchGiangVien(string maGV);
+        public List<GiangVien> SearchGiangVien(string stringSearch, Guid id);
         // Lấy danh sách giảng viên
         public List<GiangVien> GetListGiangVien();
         // Lấy giảng viên

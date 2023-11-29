@@ -138,6 +138,7 @@
             cb_chuyenNganh.ShadowDecoration.CustomizableEdges = customizableEdges8;
             cb_chuyenNganh.Size = new Size(243, 36);
             cb_chuyenNganh.TabIndex = 19;
+            cb_chuyenNganh.SelectedValueChanged += cb_chuyenNganh_SelectedValueChanged;
             // 
             // txt_Timkiemgv
             // 
@@ -158,6 +159,7 @@
             txt_Timkiemgv.ShadowDecoration.CustomizableEdges = customizableEdges10;
             txt_Timkiemgv.Size = new Size(719, 36);
             txt_Timkiemgv.TabIndex = 18;
+            txt_Timkiemgv.TextChanged += txt_Timkiemgv_TextChanged;
             // 
             // dgv_GiangVien
             // 

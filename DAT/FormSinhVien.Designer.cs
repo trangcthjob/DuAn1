@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             dgv_sinhVien = new Guna.UI2.WinForms.Guna2DataGridView();
             txt_TimkiemSV = new Guna.UI2.WinForms.Guna2TextBox();
             cb_chuyenNganh = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -56,26 +56,26 @@
             // 
             dgv_sinhVien.AllowUserToAddRows = false;
             dgv_sinhVien.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = Color.White;
-            dgv_sinhVien.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = Color.FromArgb(100, 88, 255);
-            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle5.ForeColor = Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
-            dgv_sinhVien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = Color.White;
+            dgv_sinhVien.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dgv_sinhVien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dgv_sinhVien.ColumnHeadersHeight = 40;
             dgv_sinhVien.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = Color.White;
-            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle6.ForeColor = Color.FromArgb(71, 69, 94);
-            dataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            dataGridViewCellStyle6.SelectionForeColor = Color.FromArgb(71, 69, 94);
-            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
-            dgv_sinhVien.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.White;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            dgv_sinhVien.DefaultCellStyle = dataGridViewCellStyle3;
             dgv_sinhVien.EditMode = DataGridViewEditMode.EditOnEnter;
             dgv_sinhVien.GridColor = Color.FromArgb(231, 229, 255);
             dgv_sinhVien.Location = new Point(29, 203);
@@ -110,7 +110,7 @@
             // 
             // txt_TimkiemSV
             // 
-            txt_TimkiemSV.CustomizableEdges = customizableEdges11;
+            txt_TimkiemSV.CustomizableEdges = customizableEdges1;
             txt_TimkiemSV.DefaultText = "";
             txt_TimkiemSV.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txt_TimkiemSV.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -124,14 +124,15 @@
             txt_TimkiemSV.PasswordChar = '\0';
             txt_TimkiemSV.PlaceholderText = "Tìm kiếm theo tên hoặc mã sinh viên";
             txt_TimkiemSV.SelectedText = "";
-            txt_TimkiemSV.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            txt_TimkiemSV.ShadowDecoration.CustomizableEdges = customizableEdges2;
             txt_TimkiemSV.Size = new Size(719, 36);
             txt_TimkiemSV.TabIndex = 1;
+            txt_TimkiemSV.TextChanged += txt_TimkiemSV_TextChanged;
             // 
             // cb_chuyenNganh
             // 
             cb_chuyenNganh.BackColor = Color.Transparent;
-            cb_chuyenNganh.CustomizableEdges = customizableEdges13;
+            cb_chuyenNganh.CustomizableEdges = customizableEdges3;
             cb_chuyenNganh.DrawMode = DrawMode.OwnerDrawFixed;
             cb_chuyenNganh.DropDownStyle = ComboBoxStyle.DropDownList;
             cb_chuyenNganh.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -141,10 +142,10 @@
             cb_chuyenNganh.ItemHeight = 30;
             cb_chuyenNganh.Location = new Point(29, 152);
             cb_chuyenNganh.Name = "cb_chuyenNganh";
-            cb_chuyenNganh.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            cb_chuyenNganh.ShadowDecoration.CustomizableEdges = customizableEdges4;
             cb_chuyenNganh.Size = new Size(243, 36);
             cb_chuyenNganh.TabIndex = 2;
-        
+            cb_chuyenNganh.SelectedValueChanged += cb_chuyenNganh_SelectedValueChanged;
             // 
             // lb_sinhvien
             // 
@@ -164,7 +165,7 @@
             // 
             // btn_add
             // 
-            btn_add.CustomizableEdges = customizableEdges15;
+            btn_add.CustomizableEdges = customizableEdges5;
             btn_add.DisabledState.BorderColor = Color.DarkGray;
             btn_add.DisabledState.CustomBorderColor = Color.DarkGray;
             btn_add.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -174,7 +175,7 @@
             btn_add.ForeColor = Color.White;
             btn_add.Location = new Point(484, 78);
             btn_add.Name = "btn_add";
-            btn_add.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            btn_add.ShadowDecoration.CustomizableEdges = customizableEdges6;
             btn_add.Size = new Size(160, 54);
             btn_add.TabIndex = 14;
             btn_add.Text = "Thêm sinh viên";
@@ -182,7 +183,7 @@
             // 
             // btn_update
             // 
-            btn_update.CustomizableEdges = customizableEdges17;
+            btn_update.CustomizableEdges = customizableEdges7;
             btn_update.DisabledState.BorderColor = Color.DarkGray;
             btn_update.DisabledState.CustomBorderColor = Color.DarkGray;
             btn_update.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -192,7 +193,7 @@
             btn_update.ForeColor = Color.White;
             btn_update.Location = new Point(661, 78);
             btn_update.Name = "btn_update";
-            btn_update.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            btn_update.ShadowDecoration.CustomizableEdges = customizableEdges8;
             btn_update.Size = new Size(160, 54);
             btn_update.TabIndex = 15;
             btn_update.Text = "Sửa sinh viên";
@@ -200,7 +201,7 @@
             // 
             // btn_delete
             // 
-            btn_delete.CustomizableEdges = customizableEdges19;
+            btn_delete.CustomizableEdges = customizableEdges9;
             btn_delete.DisabledState.BorderColor = Color.DarkGray;
             btn_delete.DisabledState.CustomBorderColor = Color.DarkGray;
             btn_delete.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -210,7 +211,7 @@
             btn_delete.ForeColor = Color.White;
             btn_delete.Location = new Point(837, 78);
             btn_delete.Name = "btn_delete";
-            btn_delete.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            btn_delete.ShadowDecoration.CustomizableEdges = customizableEdges10;
             btn_delete.Size = new Size(160, 54);
             btn_delete.TabIndex = 16;
             btn_delete.Text = "Xóa sinh viên";

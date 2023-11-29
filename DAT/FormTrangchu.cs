@@ -63,6 +63,7 @@ namespace DAT
 
         private void btn_sinhvien_Click(object sender, EventArgs e)
         {
+            btn_sinhvien.ForeColor = Color.Gray;
             // mở form sinh viên
             FormSinhVien formSinhVien = new FormSinhVien();
             OpenForm(formSinhVien);
@@ -71,6 +72,7 @@ namespace DAT
 
         private void btn_GiangVien_Click(object sender, EventArgs e)
         {
+            btn_GiangVien.ForeColor = Color.Gray;
             // mở form giảng viên
             FormGiangVien formGiangVien = new FormGiangVien();
             OpenForm(formGiangVien);

@@ -17,7 +17,7 @@ namespace DAT_Services.IRepository
         // Xóa sinh viên
         public bool DeleteSinhVien(Guid Id);
         // Tìm kiếm sinh viên
-        public List<SinhVien> SearchSinhVien(string maSV);
+        public List<SinhVien> SearchSinhVien(string searchString, Guid Id);
         // Lấy danh sách sinh viên
         public List<SinhVien> GetListSinhVien();
         // Lấy sinh viên

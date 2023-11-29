@@ -42,10 +42,10 @@ namespace DAT_Services.Services
             return _sinhVienRepository.GetSinhVien(maSV);
         }
 
-        public List<SinhVien> SearchSinhVien(string maSV)
+        public List<SinhVien> SearchSinhVien(string maSV,Guid IdCn)
         {
             // Tìm kiếm sinh viên
-            return _sinhVienRepository.SearchSinhVien(maSV);
+            return _sinhVienRepository.SearchSinhVien(maSV,IdCn);
         }
 
         public async Task<bool> UpdateSinhVien(SinhVien sinhVien)

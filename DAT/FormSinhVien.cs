@@ -19,6 +19,8 @@ namespace DAT
         private readonly IChuyenNganhService _chuyenNganhService;
         // Sinh viên
         private readonly ISinhVienService _sinhVienService;
+        List<ChuyenNganh> listChuyenNganh = new List<ChuyenNganh>();
+        List<SinhVien> listSinhVien = new List<SinhVien>();
         private bool isAddColumn = false;
         public FormSinhVien()
         {
@@ -28,7 +30,7 @@ namespace DAT
             _chuyenNganhService = new ChuyenNganhService();
         }
 
-   
+
 
         private void btn_add_Click(object sender, EventArgs e)
         {
@@ -37,11 +39,19 @@ namespace DAT
             formAddSinhVien.ShowDialog();
             // clear row
             dgv_sinhVien.Rows.Clear();
+            listChuyenNganh = _chuyenNganhService.GetListChuyenNganh();
+            listSinhVien = _sinhVienService.GetListSinhVien();
             FormSinhVien_Load(null, null);
         }
 
         private void FormSinhVien_Load(object sender, EventArgs e)
         {
+            if (listSinhVien.Count == 0 && listChuyenNganh.Count == 0)
+            {
+                // get list
+                listChuyenNganh = _chuyenNganhService.GetListChuyenNganh();
+                listSinhVien = _sinhVienService.GetListSinhVien();
+            }
             // lấy danh sách chuyên ngành
             // lấy danh sách sinh viên
             // join 2 bảng sinh viên và chuyên ngành
@@ -50,13 +60,17 @@ namespace DAT
             // hiển thị avatar sinh viên lên datagridview
             // hiển thị tên chuyên ngành lên datagridview
             // Lấy danh sách sinh viên
-            List<SinhVien> listSinhVien = new List<SinhVien>();
-            listSinhVien = _sinhVienService.GetListSinhVien();
             // Lấy danh sách chuyên ngành
-            List<ChuyenNganh> listChuyenNganh = _chuyenNganhService.GetListChuyenNganh();
+            // thêm lựa chọn tất cả vào chuyên ngành
+            listChuyenNganh.Add( new ChuyenNganh()
+            {
+                Id = Guid.Empty,
+                TenChuyenNganh = "Tất cả"
+            });
             cb_chuyenNganh.DataSource = listChuyenNganh;
             cb_chuyenNganh.DisplayMember = "TenChuyenNganh";
             cb_chuyenNganh.ValueMember = "Id";
+            // thêm lựa chọn tât cả vào combobox
             // Join 2 bảng sinh viên và chuyên ngành
             var listSinhVienJoin = from sv in listSinhVien
                                    join cn in listChuyenNganh
@@ -122,6 +136,8 @@ namespace DAT
                 formUpdateSinhVien.ShowDialog();
                 // clear row
                 dgv_sinhVien.Rows.Clear();
+                listChuyenNganh = _chuyenNganhService.GetListChuyenNganh();
+                listSinhVien = _sinhVienService.GetListSinhVien();
                 FormSinhVien_Load(null, null);
             }
             else
@@ -160,6 +176,30 @@ namespace DAT
             else
             {
                 MessageBox.Show("Bạn chưa chọn sinh viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void txt_TimkiemSV_TextChanged(object sender, EventArgs e)
+        {
+            //tìm kiếm sinh viên theo tên
+            //tìm kiếm theo mã sinh viên
+            listSinhVien = _sinhVienService.SearchSinhVien(txt_TimkiemSV.Text, Guid.Parse(cb_chuyenNganh.SelectedValue.ToString()));
+            dgv_sinhVien.Rows.Clear();
+            FormSinhVien_Load(null, null);
+
+        }
+
+        private void cb_chuyenNganh_SelectedValueChanged(object sender, EventArgs e)
+        {
+            // try parse guid
+            // nếu thành công thì tìm kiếm
+            // nếu không thành công thì không làm gì cả
+            if (Guid.TryParse(cb_chuyenNganh.SelectedValue.ToString(), out Guid result))
+            {
+                //tìm kiếm theo mã sinh viên
+                listSinhVien = _sinhVienService.SearchSinhVien(txt_TimkiemSV.Text, Guid.Parse(cb_chuyenNganh.SelectedValue.ToString()));
+                dgv_sinhVien.Rows.Clear();
+                FormSinhVien_Load(null, null);
             }
         }
     }

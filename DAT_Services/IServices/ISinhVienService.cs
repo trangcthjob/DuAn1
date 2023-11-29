@@ -17,7 +17,7 @@ namespace DAT_Services.IServices
         // Xóa sinh viên
         public bool DeleteSinhVien(Guid Id);
         // Tìm kiếm sinh viên
-        public List<SinhVien> SearchSinhVien(string maSV);
+        public List<SinhVien> SearchSinhVien(string maSV,Guid IdCn);
         // Lấy danh sách sinh viên
         public List<SinhVien> GetListSinhVien();
         // Lấy sinh viên

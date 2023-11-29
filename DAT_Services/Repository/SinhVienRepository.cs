@@ -56,10 +56,15 @@ namespace DAT_Services.Repository
  
         }
 
-        public List<SinhVien> SearchSinhVien(string maSV)
+        public List<SinhVien> SearchSinhVien(string stringSearch,Guid idChuyenNganh)
         {
+            if (idChuyenNganh == Guid.Empty)
+            {
+                // Tìm kiếm sinh viên
+                return _dbContext.SinhViens.Where(x => (x.MaSinhVien.Contains(stringSearch) || x.HoVaTen.Contains(stringSearch)) && !x.IsDeleted).ToList();
+            }
             // Tìm kiếm sinh viên
-            return _dbContext.SinhViens.Where(x => x.MaSinhVien.Contains(maSV) || x.HoVaTen.Contains(maSV) && !x.IsDeleted).ToList();
+            return _dbContext.SinhViens.Where(x => (x.MaSinhVien.Contains(stringSearch) || x.HoVaTen.Contains(stringSearch)) && !x.IsDeleted && x.ChuyenNganhId == idChuyenNganh).ToList();
         }
 
         public async Task<bool> UpdateSinhVien(SinhVien sinhVien)

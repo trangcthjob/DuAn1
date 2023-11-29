@@ -17,7 +17,7 @@ namespace DAT_Services.IServices
         // Xóa giảng viên
         public bool DeleteGiangVien(Guid Id);
         // Tìm kiếm giảng viên
-        public List<GiangVien> SearchGiangVien(string maGV);
+        public List<GiangVien> SearchGiangVien(string maGV,Guid IdCn);
         // Lấy danh sách giảng viên
         public List<GiangVien> GetListGiangVien();
         // Lấy giảng viên

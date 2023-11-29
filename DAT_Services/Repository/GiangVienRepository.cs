@@ -57,10 +57,15 @@ namespace DAT_Services.Repository
             return false;
         }
         //Tìm kiếm giảng viên
-        public List<GiangVien> SearchGiangVien(string maGV)
+        public List<GiangVien> SearchGiangVien(string stringSearch, Guid IdCn)
         {
+            if (IdCn == Guid.Empty)
+            {
+                // Tìm kiếm giảng viên
+                return _dbContext.GiangViens.Where(x => (x.MaGiangVien.Contains(stringSearch) || x.TenGiangVien.Contains(stringSearch)) && !x.IsDeleted).ToList();
+            }
             // Tìm kiếm giảng viên
-            return _dbContext.GiangViens.Where(x => x.MaGiangVien.Contains(maGV) || x.TenGiangVien.Contains(maGV) && !x.IsDeleted).ToList();
+            return _dbContext.GiangViens.Where(x => (x.MaGiangVien.Contains(stringSearch) || x.TenGiangVien.Contains(stringSearch)) && !x.IsDeleted && x.ChuyenNganhId == IdCn).ToList();
         }
         //Lấy danh sách giảng viên
         public List<GiangVien> GetListGiangVien()

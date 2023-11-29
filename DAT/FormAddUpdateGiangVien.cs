@@ -162,18 +162,18 @@ namespace DAT
                 }
             }
         }
-        // gen mã sinh viên
+        // gen mã giảng viên
         // lấy mã chuyên ngành của chuyên ngành đang được chọn trong combobox
         // lấy 2 ký tự đầu của chuyên ngành
-        // cộng số lượng sinh viên của chuyên ngành đó
-        // thêm vào mã sinh viên
+        // cộng số lượng giảng viên của chuyên ngành đó
+        // thêm vào mã giảng viên
         private string GetMaGV()
         {
             // Lấy mã chuyên ngành
             var maChuyenNganh = _chuyenNganhService.GetListChuyenNganh().FirstOrDefault(c => c.Id.ToString() == cb_chuyenNganh.SelectedValue.ToString());
-            // Lấy số lượng sinh viên của chuyên ngành đó
+            // Lấy số lượng giảng viên của chuyên ngành đó
             var count = _giangVienService.GetListGiangVien().Where(x => x.ChuyenNganhId.ToString() == cb_chuyenNganh.SelectedValue.ToString()).Count();
-            // Thêm vào mã sinh viên
+            // Thêm vào mã giảng viên
             var result = "GV" + maChuyenNganh.MaChuyenNganh + (count + 1).ToString();
             return result;
         }
@@ -198,7 +198,7 @@ namespace DAT
             }
         }
         // gen email
-        // lấy tên sinh viên
+        // lấy tên giảng viên
         // cắt tên bởi dấu cách
         // lấy ký tự đầu của các từ
         // thêm vào tên chuyên ngành
