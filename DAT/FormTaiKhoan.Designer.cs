@@ -374,7 +374,7 @@
             label4.Name = "label4";
             label4.Size = new Size(70, 20);
             label4.TabIndex = 5;
-            label4.Text = "mật khẩu";
+            label4.Text = "Mật khẩu";
             // 
             // label3
             // 

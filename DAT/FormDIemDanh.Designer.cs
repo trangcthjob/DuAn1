@@ -135,7 +135,7 @@
             guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             guna2HtmlLabel4.Size = new Size(79, 34);
             guna2HtmlLabel4.TabIndex = 2;
-            guna2HtmlLabel4.Text = "Ca Học";
+            guna2HtmlLabel4.Text = "Giangvien Học";
             guna2HtmlLabel4.Click += guna2HtmlLabel4_Click;
             // 
             // guna2HtmlLabel3
@@ -216,7 +216,7 @@
             guna2TextBox3.Location = new Point(245, 211);
             guna2TextBox3.Name = "guna2TextBox3";
             guna2TextBox3.PasswordChar = '\0';
-            guna2TextBox3.PlaceholderText = "Ca Học";
+            guna2TextBox3.PlaceholderText = "Giangvien Học";
             guna2TextBox3.SelectedText = "";
             guna2TextBox3.ShadowDecoration.CustomizableEdges = customizableEdges6;
             guna2TextBox3.Size = new Size(328, 67);

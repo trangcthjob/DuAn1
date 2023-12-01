@@ -87,10 +87,9 @@
             // 
             label1.AutoSize = true;
             label1.ForeColor = SystemColors.ActiveCaptionText;
-            label1.Location = new Point(576, 30);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(461, 24);
             label1.Name = "label1";
-            label1.Size = new Size(106, 25);
+            label1.Size = new Size(87, 20);
             label1.TabIndex = 0;
             label1.Text = "Ca sinh viên";
             // 
@@ -105,11 +104,10 @@
             btnDangXuat.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnDangXuat.ForeColor = Color.White;
             btnDangXuat.Image = (Image)resources.GetObject("btnDangXuat.Image");
-            btnDangXuat.Location = new Point(845, 781);
-            btnDangXuat.Margin = new Padding(4, 4, 4, 4);
+            btnDangXuat.Location = new Point(676, 625);
             btnDangXuat.Name = "btnDangXuat";
             btnDangXuat.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btnDangXuat.Size = new Size(229, 70);
+            btnDangXuat.Size = new Size(183, 56);
             btnDangXuat.TabIndex = 1;
             btnDangXuat.Text = "Đăng xuất";
             // 
@@ -124,11 +122,10 @@
             btnThoat.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnThoat.ForeColor = Color.White;
             btnThoat.Image = (Image)resources.GetObject("btnThoat.Image");
-            btnThoat.Location = new Point(1099, 781);
-            btnThoat.Margin = new Padding(4, 4, 4, 4);
+            btnThoat.Location = new Point(879, 625);
             btnThoat.Name = "btnThoat";
             btnThoat.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            btnThoat.Size = new Size(215, 70);
+            btnThoat.Size = new Size(172, 56);
             btnThoat.TabIndex = 2;
             btnThoat.Text = "Thoát";
             // 
@@ -136,10 +133,9 @@
             // 
             label2.AutoSize = true;
             label2.ForeColor = SystemColors.ActiveCaptionText;
-            label2.Location = new Point(8, 62);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(6, 50);
             label2.Name = "label2";
-            label2.Size = new Size(60, 25);
+            label2.Size = new Size(51, 20);
             label2.TabIndex = 3;
             label2.Text = "Tên ca";
             // 
@@ -147,10 +143,9 @@
             // 
             label3.AutoSize = true;
             label3.ForeColor = SystemColors.ActiveCaptionText;
-            label3.Location = new Point(8, 148);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Location = new Point(6, 118);
             label3.Name = "label3";
-            label3.Size = new Size(144, 25);
+            label3.Size = new Size(120, 20);
             label3.TabIndex = 4;
             label3.Text = "Thời gian vào Ca";
             // 
@@ -158,12 +153,11 @@
             // 
             label4.AutoSize = true;
             label4.ForeColor = SystemColors.ActiveCaptionText;
-            label4.Location = new Point(8, 245);
-            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Location = new Point(6, 196);
             label4.Name = "label4";
-            label4.Size = new Size(137, 25);
+            label4.Size = new Size(117, 20);
             label4.TabIndex = 5;
-            label4.Text = "thời gian hết Ca";
+            label4.Text = "Thời gian hết Ca";
             // 
             // groupBox1
             // 
@@ -175,11 +169,9 @@
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label4);
-            groupBox1.Location = new Point(15, 110);
-            groupBox1.Margin = new Padding(4, 4, 4, 4);
+            groupBox1.Location = new Point(12, 88);
             groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(4, 4, 4, 4);
-            groupBox1.Size = new Size(589, 510);
+            groupBox1.Size = new Size(471, 408);
             groupBox1.TabIndex = 8;
             groupBox1.TabStop = false;
             groupBox1.Text = "Ca sinh viên";
@@ -196,14 +188,13 @@
             txtTimKiem.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTimKiem.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtTimKiem.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTimKiem.Location = new Point(165, 326);
-            txtTimKiem.Margin = new Padding(4, 4, 4, 4);
+            txtTimKiem.Location = new Point(132, 261);
             txtTimKiem.Name = "txtTimKiem";
             txtTimKiem.PasswordChar = '\0';
             txtTimKiem.PlaceholderText = "";
             txtTimKiem.SelectedText = "";
             txtTimKiem.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txtTimKiem.Size = new Size(312, 56);
+            txtTimKiem.Size = new Size(250, 45);
             txtTimKiem.TabIndex = 9;
             // 
             // txthetCa
@@ -218,14 +209,13 @@
             txthetCa.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txthetCa.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txthetCa.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txthetCa.Location = new Point(165, 234);
-            txthetCa.Margin = new Padding(4, 4, 4, 4);
+            txthetCa.Location = new Point(132, 187);
             txthetCa.Name = "txthetCa";
             txthetCa.PasswordChar = '\0';
             txthetCa.PlaceholderText = "";
             txthetCa.SelectedText = "";
             txthetCa.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            txthetCa.Size = new Size(312, 56);
+            txthetCa.Size = new Size(250, 45);
             txthetCa.TabIndex = 8;
             // 
             // btnTimKiem
@@ -238,11 +228,10 @@
             btnTimKiem.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnTimKiem.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnTimKiem.ForeColor = Color.White;
-            btnTimKiem.Location = new Point(485, 326);
-            btnTimKiem.Margin = new Padding(4, 4, 4, 4);
+            btnTimKiem.Location = new Point(388, 261);
             btnTimKiem.Name = "btnTimKiem";
             btnTimKiem.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            btnTimKiem.Size = new Size(96, 56);
+            btnTimKiem.Size = new Size(77, 45);
             btnTimKiem.TabIndex = 1;
             btnTimKiem.Text = "Tìm kiếm";
             // 
@@ -258,14 +247,13 @@
             txtVaoCa.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtVaoCa.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtVaoCa.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtVaoCa.Location = new Point(165, 148);
-            txtVaoCa.Margin = new Padding(4, 4, 4, 4);
+            txtVaoCa.Location = new Point(132, 118);
             txtVaoCa.Name = "txtVaoCa";
             txtVaoCa.PasswordChar = '\0';
             txtVaoCa.PlaceholderText = "";
             txtVaoCa.SelectedText = "";
             txtVaoCa.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            txtVaoCa.Size = new Size(312, 56);
+            txtVaoCa.Size = new Size(250, 45);
             txtVaoCa.TabIndex = 7;
             // 
             // txtTen
@@ -280,14 +268,13 @@
             txtTen.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTen.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtTen.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTen.Location = new Point(165, 62);
-            txtTen.Margin = new Padding(4, 4, 4, 4);
+            txtTen.Location = new Point(132, 50);
             txtTen.Name = "txtTen";
             txtTen.PasswordChar = '\0';
             txtTen.PlaceholderText = "";
             txtTen.SelectedText = "";
             txtTen.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            txtTen.Size = new Size(312, 56);
+            txtTen.Size = new Size(250, 45);
             txtTen.TabIndex = 6;
             // 
             // groupBox2
@@ -299,11 +286,9 @@
             groupBox2.Controls.Add(btnSua);
             groupBox2.Controls.Add(btnThem);
             groupBox2.Controls.Add(dtgCa);
-            groupBox2.Location = new Point(675, 110);
-            groupBox2.Margin = new Padding(4, 4, 4, 4);
+            groupBox2.Location = new Point(540, 88);
             groupBox2.Name = "groupBox2";
-            groupBox2.Padding = new Padding(4, 4, 4, 4);
-            groupBox2.Size = new Size(705, 644);
+            groupBox2.Size = new Size(564, 515);
             groupBox2.TabIndex = 9;
             groupBox2.TabStop = false;
             groupBox2.Text = "Chức Năng";
@@ -319,11 +304,10 @@
             btnLuu.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnLuu.ForeColor = Color.White;
             btnLuu.Image = (Image)resources.GetObject("btnLuu.Image");
-            btnLuu.Location = new Point(458, 499);
-            btnLuu.Margin = new Padding(4, 4, 4, 4);
+            btnLuu.Location = new Point(366, 399);
             btnLuu.Name = "btnLuu";
             btnLuu.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            btnLuu.Size = new Size(181, 70);
+            btnLuu.Size = new Size(145, 56);
             btnLuu.TabIndex = 8;
             btnLuu.Text = "Lưu";
             // 
@@ -338,11 +322,10 @@
             btnSapXep.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnSapXep.ForeColor = Color.White;
             btnSapXep.Image = (Image)resources.GetObject("btnSapXep.Image");
-            btnSapXep.Location = new Point(244, 499);
-            btnSapXep.Margin = new Padding(4, 4, 4, 4);
+            btnSapXep.Location = new Point(195, 399);
             btnSapXep.Name = "btnSapXep";
             btnSapXep.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            btnSapXep.Size = new Size(180, 70);
+            btnSapXep.Size = new Size(144, 56);
             btnSapXep.TabIndex = 7;
             btnSapXep.Text = "Sắp Xếp";
             // 
@@ -357,11 +340,10 @@
             btnClear.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnClear.ForeColor = Color.White;
             btnClear.Image = (Image)resources.GetObject("btnClear.Image");
-            btnClear.Location = new Point(31, 499);
-            btnClear.Margin = new Padding(4, 4, 4, 4);
+            btnClear.Location = new Point(25, 399);
             btnClear.Name = "btnClear";
             btnClear.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            btnClear.Size = new Size(181, 70);
+            btnClear.Size = new Size(145, 56);
             btnClear.TabIndex = 6;
             btnClear.Text = "Clear";
             // 
@@ -376,11 +358,10 @@
             btnxoa.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnxoa.ForeColor = Color.White;
             btnxoa.Image = (Image)resources.GetObject("btnxoa.Image");
-            btnxoa.Location = new Point(458, 409);
-            btnxoa.Margin = new Padding(4, 4, 4, 4);
+            btnxoa.Location = new Point(366, 327);
             btnxoa.Name = "btnxoa";
             btnxoa.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            btnxoa.Size = new Size(181, 70);
+            btnxoa.Size = new Size(145, 56);
             btnxoa.TabIndex = 5;
             btnxoa.Text = "Xóa";
             // 
@@ -395,11 +376,10 @@
             btnSua.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnSua.ForeColor = Color.White;
             btnSua.Image = (Image)resources.GetObject("btnSua.Image");
-            btnSua.Location = new Point(244, 409);
-            btnSua.Margin = new Padding(4, 4, 4, 4);
+            btnSua.Location = new Point(195, 327);
             btnSua.Name = "btnSua";
             btnSua.ShadowDecoration.CustomizableEdges = customizableEdges24;
-            btnSua.Size = new Size(180, 70);
+            btnSua.Size = new Size(144, 56);
             btnSua.TabIndex = 4;
             btnSua.Text = "Sửa";
             // 
@@ -414,11 +394,10 @@
             btnThem.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnThem.ForeColor = Color.White;
             btnThem.Image = (Image)resources.GetObject("btnThem.Image");
-            btnThem.Location = new Point(31, 409);
-            btnThem.Margin = new Padding(4, 4, 4, 4);
+            btnThem.Location = new Point(25, 327);
             btnThem.Name = "btnThem";
             btnThem.ShadowDecoration.CustomizableEdges = customizableEdges26;
-            btnThem.Size = new Size(181, 70);
+            btnThem.Size = new Size(145, 56);
             btnThem.TabIndex = 3;
             btnThem.Text = "Thêm";
             // 
@@ -445,13 +424,12 @@
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             dtgCa.DefaultCellStyle = dataGridViewCellStyle3;
             dtgCa.GridColor = Color.FromArgb(231, 229, 255);
-            dtgCa.Location = new Point(31, 46);
-            dtgCa.Margin = new Padding(4, 4, 4, 4);
+            dtgCa.Location = new Point(25, 37);
             dtgCa.Name = "dtgCa";
             dtgCa.RowHeadersVisible = false;
             dtgCa.RowHeadersWidth = 51;
             dtgCa.RowTemplate.Height = 29;
-            dtgCa.Size = new Size(666, 340);
+            dtgCa.Size = new Size(533, 272);
             dtgCa.TabIndex = 0;
             dtgCa.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             dtgCa.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -477,19 +455,19 @@
             // 
             // FormCa
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(1395, 866);
+            ClientSize = new Size(1116, 693);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(btnThoat);
             Controls.Add(btnDangXuat);
             Controls.Add(label1);
             ForeColor = SystemColors.Control;
-            Margin = new Padding(4, 4, 4, 4);
             Name = "FormCa";
             Text = "FormCa";
+            Load += FormCa_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);

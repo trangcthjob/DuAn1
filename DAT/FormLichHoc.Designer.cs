@@ -490,7 +490,7 @@
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             guna2HtmlLabel2.Size = new Size(51, 22);
             guna2HtmlLabel2.TabIndex = 3;
-            guna2HtmlLabel2.Text = "Ca Học";
+            guna2HtmlLabel2.Text = "Giangvien Học";
             // 
             // guna2HtmlLabel3
             // 

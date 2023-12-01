@@ -80,7 +80,7 @@ namespace DAT_Context.Migrations
                     b.ToTable("Accounts");
                 });
 
-            modelBuilder.Entity("Domain.Models.Ca", b =>
+            modelBuilder.Entity("Domain.Models.Giangvien", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -164,7 +164,7 @@ namespace DAT_Context.Migrations
                     b.ToTable("DiemDanhs");
                 });
 
-            modelBuilder.Entity("Domain.Models.GiangVien", b =>
+            modelBuilder.Entity("Domain.Models.Giangvien", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -212,7 +212,7 @@ namespace DAT_Context.Migrations
 
                     b.HasIndex("ChuyenNganhId");
 
-                    b.ToTable("GiangViens");
+                    b.ToTable("Cas");
                 });
 
             modelBuilder.Entity("Domain.Models.KiHoc", b =>
@@ -460,7 +460,7 @@ namespace DAT_Context.Migrations
                     b.Navigation("LichHoc");
                 });
 
-            modelBuilder.Entity("Domain.Models.GiangVien", b =>
+            modelBuilder.Entity("Domain.Models.Giangvien", b =>
                 {
                     b.HasOne("Domain.Models.ChuyenNganh", "ChuyenNganh")
                         .WithMany()
@@ -471,13 +471,13 @@ namespace DAT_Context.Migrations
 
             modelBuilder.Entity("Domain.Models.LichHoc", b =>
                 {
-                    b.HasOne("Domain.Models.Ca", "Ca")
+                    b.HasOne("Domain.Models.Giangvien", "Giangvien")
                         .WithMany("LichHocs")
                         .HasForeignKey("CaID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Domain.Models.GiangVien", "GiangVien")
+                    b.HasOne("Domain.Models.Giangvien", "Giangvien")
                         .WithMany()
                         .HasForeignKey("GiangVienId");
 
@@ -493,9 +493,9 @@ namespace DAT_Context.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Ca");
+                    b.Navigation("Giangvien");
 
-                    b.Navigation("GiangVien");
+                    b.Navigation("Giangvien");
 
                     b.Navigation("LopHoc");
 
@@ -535,7 +535,7 @@ namespace DAT_Context.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Domain.Models.Ca", b =>
+            modelBuilder.Entity("Domain.Models.Giangvien", b =>
                 {
                     b.Navigation("LichHocs");
                 });

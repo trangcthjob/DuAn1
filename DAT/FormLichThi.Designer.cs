@@ -361,7 +361,7 @@
             label3.Name = "label3";
             label3.Size = new Size(50, 20);
             label3.TabIndex = 2;
-            label3.Text = "Ca Thi";
+            label3.Text = "Giangvien Thi";
             // 
             // label2
             // 
